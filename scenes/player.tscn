@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4vl5yw8xqr2g"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
+[ext_resource type="PackedScene" uid="uid://bpbw3dycfp5qm" path="res://scenes/bullet.tscn" id="2_bullet"]
+[ext_resource type="Texture2D" path="res://sprites/player_ship.svg" id="3_sprite"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
+size = Vector2(50, 50)
+
+[node name="Player" type="Area2D"]
+collision_layer = 1
+collision_mask = 8
+script = ExtResource("1_player")
+bullet_scene = ExtResource("2_bullet")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_sprite")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_player")

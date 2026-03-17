@@ -1,0 +1,107 @@
+<svg width="64" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80">
+  <!-- Sleek Tactical Mecha with Assault Rifle -->
+  
+  <!-- Background glow effect -->
+  <ellipse cx="32" cy="70" rx="20" ry="4" fill="#000000" opacity="0.2"/>
+  
+  <!-- Legs - sleek design -->
+  <path d="M 26 54 L 24 62 L 23 75 L 27 76 L 28 62 L 28 54 Z" fill="#2C3E50" stroke="#1A252F" stroke-width="0.8"/>
+  <path d="M 38 54 L 40 62 L 41 75 L 37 76 L 36 62 L 36 54 Z" fill="#2C3E50" stroke="#1A252F" stroke-width="0.8"/>
+  
+  <!-- Leg armor plates -->
+  <rect x="24" y="58" width="3" height="8" fill="#34495E"/>
+  <rect x="37" y="58" width="3" height="8" fill="#34495E"/>
+  <rect x="24" y="68" width="3" height="5" fill="#E74C3C"/>
+  <rect x="37" y="68" width="3" height="5" fill="#E74C3C"/>
+  
+  <!-- Feet/boots -->
+  <path d="M 21 75 L 27 75 L 28 77 L 20 77 Z" fill="#1A252F"/>
+  <path d="M 37 75 L 43 75 L 44 77 L 36 77 Z" fill="#1A252F"/>
+  
+  <!-- Hip thrusters -->
+  <ellipse cx="25" cy="54" rx="3" ry="2" fill="#3498DB" opacity="0.7"/>
+  <ellipse cx="39" cy="54" rx="3" ry="2" fill="#3498DB" opacity="0.7"/>
+  
+  <!-- Waist/Hip unit -->
+  <path d="M 22 48 L 22 54 L 42 54 L 42 48 Z" fill="#34495E" stroke="#1A252F" stroke-width="0.8"/>
+  <rect x="29" y="49" width="6" height="4" fill="#E74C3C"/>
+  <circle cx="32" cy="51" r="1.5" fill="#3498DB"/>
+  
+  <!-- Main torso - angular armor -->
+  <path d="M 20 32 L 18 48 L 46 48 L 44 32 Z" fill="#2C3E50" stroke="#1A252F" stroke-width="0.8"/>
+  <path d="M 24 34 L 22 46 L 42 46 L 40 34 Z" fill="#34495E"/>
+  
+  <!-- Chest reactor core -->
+  <circle cx="32" cy="40" r="4" fill="#E74C3C" opacity="0.8"/>
+  <circle cx="32" cy="40" r="2.5" fill="#3498DB"/>
+  <circle cx="32" cy="40" r="1" fill="#FFFFFF"/>
+  
+  <!-- Chest vents -->
+  <line x1="24" y1="36" x2="28" y2="36" stroke="#3498DB" stroke-width="1.5"/>
+  <line x1="36" y1="36" x2="40" y2="36" stroke="#3498DB" stroke-width="1.5"/>
+  <line x1="24" y1="43" x2="28" y2="43" stroke="#E74C3C" stroke-width="1"/>
+  <line x1="36" y1="43" x2="40" y2="43" stroke="#E74C3C" stroke-width="1"/>
+  
+  <!-- Right arm (gun holding) - extended forward -->
+  <path d="M 44 32 L 50 34 L 52 44 L 48 45 L 46 35 Z" fill="#2C3E50" stroke="#1A252F" stroke-width="0.8"/>
+  <rect x="49" y="37" width="2" height="5" fill="#E74C3C"/>
+  
+  <!-- ASSAULT RIFLE - prominent weapon -->
+  <!-- Stock -->
+  <rect x="54" y="42" width="4" height="3" fill="#1A252F"/>
+  <!-- Receiver -->
+  <rect x="50" y="41" width="8" height="4" fill="#34495E" stroke="#1A252F" stroke-width="0.6"/>
+  <!-- Magazine -->
+  <rect x="52" y="45" width="3" height="6" fill="#2C3E50" stroke="#1A252F" stroke-width="0.5"/>
+  <!-- Barrel -->
+  <rect x="45" y="42" width="8" height="2" fill="#2C3E50" stroke="#1A252F" stroke-width="0.6"/>
+  <rect x="42" y="42.5" width="3" height="1" fill="#E74C3C"/>
+  <!-- Muzzle -->
+  <rect x="42" y="42" width="1" height="2" fill="#1A252F"/>
+  <!-- Scope -->
+  <rect x="51" y="39" width="3" height="1.5" fill="#3498DB" opacity="0.6"/>
+  <!-- Grip -->
+  <path d="M 51 45 L 50 48 L 52 48 L 52 45 Z" fill="#1A252F"/>
+  
+  <!-- Left arm - supporting position -->
+  <path d="M 20 32 L 14 34 L 12 44 L 16 45 L 18 35 Z" fill="#2C3E50" stroke="#1A252F" stroke-width="0.8"/>
+  <rect x="13" y="37" width="2" height="5" fill="#E74C3C"/>
+  
+  <!-- Shoulder armor - angular plates -->
+  <path d="M 18 28 L 14 30 L 14 34 L 18 32 Z" fill="#34495E" stroke="#1A252F" stroke-width="0.8"/>
+  <path d="M 46 28 L 50 30 L 50 34 L 46 32 Z" fill="#34495E" stroke="#1A252F" stroke-width="0.8"/>
+  <polygon points="16,28 18,26 18,28" fill="#E74C3C"/>
+  <polygon points="48,28 46,26 46,28" fill="#E74C3C"/>
+  
+  <!-- Neck connector -->
+  <rect x="28" y="24" width="8" height="4" fill="#1A252F"/>
+  
+  <!-- Head - tactical helmet design -->
+  <ellipse cx="32" cy="18" rx="8" ry="9" fill="#2C3E50" stroke="#1A252F" stroke-width="0.8"/>
+  
+  <!-- Visor - single angular visor -->
+  <path d="M 24 17 L 40 17 L 38 20 L 26 20 Z" fill="#3498DB" opacity="0.9"/>
+  <path d="M 25 18 L 39 18 L 37 19 L 27 19 Z" fill="#00FFFF" opacity="0.6"/>
+  
+  <!-- Helmet details -->
+  <rect x="23" y="14" width="2" height="8" fill="#E74C3C"/>
+  <rect x="39" y="14" width="2" height="8" fill="#E74C3C"/>
+  <circle cx="28" cy="15" r="1" fill="#3498DB"/>
+  <circle cx="36" cy="15" r="1" fill="#3498DB"/>
+  
+  <!-- Antenna/sensors -->
+  <line x1="30" y1="10" x2="32" y2="6" stroke="#E74C3C" stroke-width="1.5"/>
+  <line x1="34" y1="10" x2="32" y2="6" stroke="#E74C3C" stroke-width="1.5"/>
+  <circle cx="32" cy="6" r="1.5" fill="#3498DB"/>
+  
+  <!-- Chin guard -->
+  <rect x="30" y="22" width="4" height="2" fill="#34495E"/>
+  
+  <!-- Energy effects / glow -->
+  <circle cx="32" cy="40" r="3" fill="#3498DB" opacity="0.3"/>
+  <ellipse cx="32" cy="18" rx="9" ry="10" fill="#3498DB" opacity="0.1"/>
+  
+  <!-- Muzzle flash indicator (optional - shows gun is active) -->
+  <polygon points="42,43 40,41 40,45" fill="#FFD700" opacity="0.7"/>
+  <polygon points="42,43 39,42 39,44" fill="#FFA500" opacity="0.5"/>
+</svg>
