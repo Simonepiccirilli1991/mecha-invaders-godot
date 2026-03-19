@@ -2,22 +2,22 @@ extends Area2D
 
 # Bullet script - handles bullet movement and cleanup
 
-# Movement speed
 @export var speed: float = 600.0
-
-# Direction vector (set by whoever creates the bullet)
 var direction: Vector2 = Vector2.UP
 
+# Visual and behavior properties set by whoever spawns this bullet
+var bullet_color: Color = Color.WHITE
+var bullet_scale: Vector2 = Vector2(1.0, 1.0)
+var piercing: bool = false  # If true, bullet passes through enemies
+
 func _ready() -> void:
-	# Bullets will be added to groups to identify them
-	# Groups are set by the spawner (player_bullet or enemy_bullet)
-	pass
+	$Sprite2D.modulate = bullet_color
+	scale = bullet_scale
 
 func _process(delta: float) -> void:
-	# Move the bullet in the specified direction
 	position += direction * speed * delta
-	
-	# Remove bullet if it goes off screen
+
 	var screen_size = get_viewport_rect().size
-	if position.y < -20 or position.y > screen_size.y + 20:
+	if position.y < -40 or position.y > screen_size.y + 40 or \
+	   position.x < -40 or position.x > screen_size.x + 40:
 		queue_free()

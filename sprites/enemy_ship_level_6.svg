@@ -1,0 +1,11 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Level 6: Horned Demon Ship -->
+  <polygon points="24,8 38,30 34,44 14,44 10,30" fill="#2244cc"/>
+  <polygon points="10,30 4,8 16,22" fill="#1133bb"/>
+  <polygon points="38,30 44,8 32,22" fill="#1133bb"/>
+  <rect x="14" y="20" width="20" height="8" rx="2" fill="#00ccff"/>
+  <circle cx="19" cy="24" r="2" fill="#ffffff"/>
+  <circle cx="29" cy="24" r="2" fill="#ffffff"/>
+  <rect x="14" y="38" width="6" height="6" rx="1" fill="#ff6600"/>
+  <rect x="28" y="38" width="6" height="6" rx="1" fill="#ff6600"/>
+</svg>

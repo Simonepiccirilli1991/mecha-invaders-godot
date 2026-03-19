@@ -18,6 +18,7 @@ var enemies: Array[Node] = []
 var enemies_alive: int = 0  # Track count separately
 var move_direction: int = 1
 var edge_reached: bool = false
+var current_sprite_path: String = "res://sprites/enemy_alien.svg"
 
 signal all_enemies_destroyed
 signal enemy_reached_player
@@ -35,6 +36,7 @@ func setup_level(config: Dictionary) -> void:
 	move_speed = config["speed"]
 	descent_amount = config["descent"]
 	shoot_interval = config["shoot_interval"]
+	current_sprite_path = config.get("sprite", "res://sprites/enemy_alien.svg")
 	
 	# Reset direction to start moving right
 	move_direction = 1
@@ -84,6 +86,7 @@ func spawn_enemies() -> void:
 			enemy.direction = move_direction
 			enemy.move_speed = move_speed  # Set enemy speed from config
 			enemy.descent_amount = descent_amount  # Set descent from config
+			enemy.sprite_path = current_sprite_path  # Set level-specific sprite
 			
 			# Connect signals
 			enemy.enemy_destroyed.connect(_on_enemy_destroyed)

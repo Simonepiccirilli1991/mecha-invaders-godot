@@ -10,10 +10,14 @@ extends Node2D
 @onready var level_transition = $LevelTransition
 
 var is_transitioning: bool = false
+var mecha_selection_screen_scene = preload("res://scenes/ui/mecha_selection_screen.tscn")
+var mecha_selection_screen: CanvasLayer = null
 
 func _ready() -> void:
 	# Connect player signals
 	player.player_hit.connect(_on_player_hit)
+	player.special_charge_changed.connect(hud.update_special)
+	player.ultimate_cooldown_changed.connect(hud.update_ultimate)
 	
 	# Connect enemy spawner signals
 	enemy_spawner.all_enemies_destroyed.connect(_on_all_enemies_destroyed)
@@ -44,9 +48,29 @@ func _ready() -> void:
 	hud.visible = false
 
 func _on_start_game_pressed() -> void:
-	# Start the game
+	# Show mecha selection screen instead of starting immediately
+	show_mecha_selection()
+
+func show_mecha_selection() -> void:
+	# Create and show the mecha selection screen
+	mecha_selection_screen = mecha_selection_screen_scene.instantiate()
+	mecha_selection_screen.mecha_selected.connect(_on_mecha_selected)
+	add_child(mecha_selection_screen)
+
+func _on_mecha_selected() -> void:
+	# Mecha has been selected, now start the game
+	print("Main: Mecha selected, starting game with ", MechaSelector.get_mecha_name())
+	# Re-apply stats so the chosen mecha's sprite and stats are used
+	# (apply_mecha_stats() ran at _ready() before selection was possible)
+	player.apply_mecha_stats()
 	player.visible = true
 	hud.visible = true
+	# Initialise special charge display for chosen mecha
+	hud.set_special_name(player.mecha_special_name)
+	var weapon_data = MechaSelector.get_selected_mecha_data()["weapon"]
+	hud.set_weapon_name(weapon_data["display_name"])
+	hud.set_ultimate_name(MechaSelector.get_selected_mecha_data()["ultimate"]["display_name"])
+	hud.update_special(0, player.special_charges_needed, false)
 	game_manager.start_game()
 	start_level(1)
 

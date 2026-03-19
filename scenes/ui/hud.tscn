@@ -35,6 +35,23 @@ theme_override_colors/font_color = Color(0, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 32
 text = "Level: 1"
 
+[node name="SpecialLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "SPECIAL: 0/8 [X]"
+
+[node name="UltimateLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.2, 0.2, 1)
+theme_override_font_sizes/font_size = 24
+text = "ULTIMATE: READY! [Z]"
+
+[node name="WeaponLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "WEAPON: —"
+
 [node name="GameOverPanel" type="Panel" parent="."]
 visible = false
 anchors_preset = 8

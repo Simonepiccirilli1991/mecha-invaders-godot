@@ -1,0 +1,196 @@
+<svg width="64" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80">
+  <!-- COLOSSUS - Artillery Support Mecha - SRW Style -->
+  <!-- Deep purple heavy artillery commander with dual shoulder pods -->
+
+  <!-- Shadow -->
+  <ellipse cx="32" cy="77" rx="26" ry="3.5" fill="#000000" opacity="0.35"/>
+
+  <!-- ===== LEGS ===== -->
+  <!-- Left leg -->
+  <path d="M 20 44 L 18 56 L 15 65 L 14 75 L 21 75 L 22 65 L 24 56 L 25 44 Z" fill="#4A148C" stroke="#1A0033" stroke-width="0.9"/>
+  <!-- Right leg -->
+  <path d="M 39 44 L 41 56 L 46 65 L 46 75 L 39 75 L 38 65 L 36 56 L 36 44 Z" fill="#4A148C" stroke="#1A0033" stroke-width="0.9"/>
+
+  <!-- Knee armor plates -->
+  <rect x="16" y="55" width="8" height="5" rx="1" fill="#6A1B9A" stroke="#1A0033" stroke-width="0.7"/>
+  <rect x="40" y="55" width="8" height="5" rx="1" fill="#6A1B9A" stroke="#1A0033" stroke-width="0.7"/>
+  <rect x="17" y="56" width="6" height="3" fill="#AB47BC"/>
+  <rect x="41" y="56" width="6" height="3" fill="#AB47BC"/>
+
+  <!-- Lower leg armor -->
+  <rect x="15" y="62" width="8" height="10" rx="1" fill="#6A1B9A" stroke="#1A0033" stroke-width="0.7"/>
+  <rect x="41" y="62" width="8" height="10" rx="1" fill="#6A1B9A" stroke="#1A0033" stroke-width="0.7"/>
+  <!-- Panel lines -->
+  <line x1="19" y1="63" x2="19" y2="71" stroke="#1A0033" stroke-width="0.5" opacity="0.6"/>
+  <line x1="45" y1="63" x2="45" y2="71" stroke="#1A0033" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Heavy boots -->
+  <rect x="12" y="73" width="12" height="5" rx="1" fill="#1A0033" stroke="#4A148C" stroke-width="0.6"/>
+  <rect x="40" y="73" width="12" height="5" rx="1" fill="#1A0033" stroke="#4A148C" stroke-width="0.6"/>
+  <rect x="13" y="74" width="4" height="2" fill="#AB47BC"/>
+  <rect x="47" y="74" width="4" height="2" fill="#AB47BC"/>
+
+  <!-- Hip joint blocks -->
+  <rect x="18" y="43" width="6" height="4" rx="1" fill="#7B1FA2" stroke="#1A0033" stroke-width="0.5"/>
+  <rect x="38" y="43" width="6" height="4" rx="1" fill="#7B1FA2" stroke="#1A0033" stroke-width="0.5"/>
+
+  <!-- ===== WAIST ===== -->
+  <rect x="17" y="37" width="30" height="8" rx="1" fill="#6A1B9A" stroke="#1A0033" stroke-width="0.9"/>
+  <rect x="19" y="39" width="26" height="4" fill="#7B1FA2"/>
+  <rect x="26" y="39.5" width="12" height="3" fill="#AB47BC"/>
+  <circle cx="32" cy="41" r="2" fill="#CE93D8"/>
+  <circle cx="32" cy="41" r="1" fill="#F3E5F5"/>
+
+  <!-- ===== TORSO — hunched/heavy ===== -->
+  <rect x="15" y="16" width="34" height="22" rx="1" fill="#4A148C" stroke="#1A0033" stroke-width="1"/>
+  <rect x="17" y="18" width="30" height="18" fill="#6A1B9A"/>
+
+  <!-- Chest armor V-fin panel -->
+  <polygon points="32,17 22,22 22,30 32,32 42,30 42,22" fill="#7B1FA2" stroke="#1A0033" stroke-width="0.6"/>
+
+  <!-- Central reactor core -->
+  <circle cx="32" cy="26" r="5" fill="#AB47BC"/>
+  <circle cx="32" cy="26" r="3.5" fill="#CE93D8"/>
+  <circle cx="32" cy="26" r="2" fill="#E1BEE7"/>
+  <circle cx="32" cy="26" r="1" fill="#FFFFFF"/>
+
+  <!-- Power conduits left/right -->
+  <rect x="16" y="24" width="7" height="4" rx="1" fill="#7B1FA2" stroke="#1A0033" stroke-width="0.5"/>
+  <rect x="41" y="24" width="7" height="4" rx="1" fill="#7B1FA2" stroke="#1A0033" stroke-width="0.5"/>
+  <line x1="23" y1="26" x2="27" y2="26" stroke="#CE93D8" stroke-width="1.5"/>
+  <line x1="37" y1="26" x2="41" y2="26" stroke="#CE93D8" stroke-width="1.5"/>
+
+  <!-- Torso panel lines -->
+  <line x1="32" y1="18" x2="32" y2="21" stroke="#1A0033" stroke-width="0.5" opacity="0.5"/>
+  <line x1="32" y1="31" x2="32" y2="37" stroke="#1A0033" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Reactor glow -->
+  <circle cx="32" cy="26" r="8" fill="#CE93D8" opacity="0.12"/>
+
+  <!-- ===== ARMS — stubby, hunched under pod weight ===== -->
+  <!-- Left arm -->
+  <rect x="7" y="19" width="8" height="16" rx="1" fill="#4A148C" stroke="#1A0033" stroke-width="0.8"/>
+  <rect x="8" y="21" width="6" height="12" fill="#6A1B9A"/>
+  <rect x="8" y="29" width="6" height="3" fill="#B0BEC5" stroke="#1A0033" stroke-width="0.4"/>
+  <!-- Left hand -->
+  <rect x="7" y="34" width="8" height="5" rx="1" fill="#4A148C" stroke="#1A0033" stroke-width="0.6"/>
+
+  <!-- Right arm -->
+  <rect x="49" y="19" width="8" height="16" rx="1" fill="#4A148C" stroke="#1A0033" stroke-width="0.8"/>
+  <rect x="50" y="21" width="6" height="12" fill="#6A1B9A"/>
+  <rect x="50" y="29" width="6" height="3" fill="#B0BEC5" stroke="#1A0033" stroke-width="0.4"/>
+  <!-- Right hand -->
+  <rect x="49" y="34" width="8" height="5" rx="1" fill="#4A148C" stroke="#1A0033" stroke-width="0.6"/>
+
+  <!-- ===== DUAL SHOULDER ARTILLERY PODS — DOMINANT ===== -->
+  <!-- These extend well beyond the torso on both sides -->
+
+  <!-- Left shoulder base/mount -->
+  <rect x="4" y="13" width="14" height="9" rx="1" fill="#4A148C" stroke="#1A0033" stroke-width="0.9"/>
+  <rect x="5" y="14" width="12" height="7" fill="#6A1B9A"/>
+
+  <!-- Right shoulder base/mount -->
+  <rect x="46" y="13" width="14" height="9" rx="1" fill="#4A148C" stroke="#1A0033" stroke-width="0.9"/>
+  <rect x="47" y="14" width="12" height="7" fill="#6A1B9A"/>
+
+  <!-- LEFT ARTILLERY POD — massive rectangular launcher -->
+  <rect x="-6" y="2" width="22" height="14" rx="2" fill="#7B1FA2" stroke="#1A0033" stroke-width="1"/>
+  <rect x="-5" y="3" width="20" height="12" rx="1" fill="#6A1B9A"/>
+  <!-- Pod housing ridge -->
+  <rect x="-5" y="7" width="20" height="2" fill="#AB47BC" opacity="0.7"/>
+  <!-- Barrel ports (4 tubes pointing upward — top face) -->
+  <rect x="-3" y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <rect x="2"  y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <rect x="7"  y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <rect x="12" y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <!-- Barrel inner glow -->
+  <circle cx="-1.5" cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <circle cx="3.5"  cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <circle cx="8.5"  cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <circle cx="13.5" cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <!-- Pod detail lines -->
+  <line x1="-4" y1="10" x2="15" y2="10" stroke="#1A0033" stroke-width="0.5" opacity="0.5"/>
+  <line x1="-4" y1="13" x2="15" y2="13" stroke="#1A0033" stroke-width="0.5" opacity="0.5"/>
+  <!-- Pod vents -->
+  <rect x="0"  y="11" width="2" height="3" fill="#4A148C"/>
+  <rect x="4"  y="11" width="2" height="3" fill="#4A148C"/>
+  <rect x="8"  y="11" width="2" height="3" fill="#4A148C"/>
+  <!-- Status light -->
+  <circle cx="14" cy="12" r="1.2" fill="#CE93D8"/>
+  <circle cx="14" cy="12" r="0.6" fill="#FFFFFF"/>
+
+  <!-- RIGHT ARTILLERY POD — massive rectangular launcher -->
+  <rect x="48" y="2" width="22" height="14" rx="2" fill="#7B1FA2" stroke="#1A0033" stroke-width="1"/>
+  <rect x="49" y="3" width="20" height="12" rx="1" fill="#6A1B9A"/>
+  <!-- Pod housing ridge -->
+  <rect x="49" y="7" width="20" height="2" fill="#AB47BC" opacity="0.7"/>
+  <!-- Barrel ports (4 tubes pointing upward) -->
+  <rect x="50" y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <rect x="55" y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <rect x="60" y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <rect x="65" y="2" width="3" height="4" rx="0.5" fill="#1A0033" stroke="#AB47BC" stroke-width="0.5"/>
+  <!-- Barrel inner glow -->
+  <circle cx="51.5" cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <circle cx="56.5" cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <circle cx="61.5" cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <circle cx="66.5" cy="2" r="0.8" fill="#AB47BC" opacity="0.8"/>
+  <!-- Pod detail lines -->
+  <line x1="49" y1="10" x2="68" y2="10" stroke="#1A0033" stroke-width="0.5" opacity="0.5"/>
+  <line x1="49" y1="13" x2="68" y2="13" stroke="#1A0033" stroke-width="0.5" opacity="0.5"/>
+  <!-- Pod vents -->
+  <rect x="52" y="11" width="2" height="3" fill="#4A148C"/>
+  <rect x="56" y="11" width="2" height="3" fill="#4A148C"/>
+  <rect x="60" y="11" width="2" height="3" fill="#4A148C"/>
+  <!-- Status light -->
+  <circle cx="50" cy="12" r="1.2" fill="#CE93D8"/>
+  <circle cx="50" cy="12" r="0.6" fill="#FFFFFF"/>
+
+  <!-- ===== NECK ===== -->
+  <rect x="25" y="13" width="14" height="4" rx="1" fill="#1A0033"/>
+  <rect x="26" y="14" width="12" height="2" fill="#4A148C"/>
+
+  <!-- ===== HEAD — Tactical command helmet ===== -->
+  <!-- Main head block -->
+  <rect x="21" y="3" width="22" height="11" rx="2" fill="#4A148C" stroke="#1A0033" stroke-width="1"/>
+  <rect x="22" y="4" width="20" height="9" rx="1" fill="#6A1B9A"/>
+
+  <!-- Full-width glowing purple visor (sensor strip) -->
+  <rect x="21" y="6" width="22" height="4" rx="0.5" fill="#AB47BC"/>
+  <rect x="22" y="6.5" width="20" height="3" fill="#CE93D8" opacity="0.9"/>
+  <!-- Visor scan lines -->
+  <line x1="25" y1="7" x2="25" y2="10" stroke="#1A0033" stroke-width="0.4" opacity="0.4"/>
+  <line x1="29" y1="7" x2="29" y2="10" stroke="#1A0033" stroke-width="0.4" opacity="0.4"/>
+  <line x1="33" y1="7" x2="33" y2="10" stroke="#1A0033" stroke-width="0.4" opacity="0.4"/>
+  <line x1="37" y1="7" x2="37" y2="10" stroke="#1A0033" stroke-width="0.4" opacity="0.4"/>
+  <line x1="41" y1="7" x2="41" y2="10" stroke="#1A0033" stroke-width="0.4" opacity="0.4"/>
+  <!-- Visor inner glow -->
+  <rect x="22" y="7" width="20" height="1.5" fill="#E1BEE7" opacity="0.5"/>
+
+  <!-- Head top armor ridge -->
+  <rect x="24" y="3" width="16" height="3" rx="1" fill="#7B1FA2"/>
+  <rect x="28" y="3.5" width="8" height="1.5" fill="#AB47BC"/>
+
+  <!-- Chin/mouth grill -->
+  <rect x="25" y="10" width="14" height="3" rx="0.5" fill="#4A148C"/>
+  <line x1="27" y1="11.5" x2="37" y2="11.5" stroke="#6A1B9A" stroke-width="0.7"/>
+  <line x1="27" y1="12.5" x2="37" y2="12.5" stroke="#6A1B9A" stroke-width="0.4" opacity="0.5"/>
+
+  <!-- Antenna array (command unit) -->
+  <!-- Left antenna -->
+  <rect x="22" y="1" width="2" height="3" fill="#B0BEC5"/>
+  <line x1="23" y1="1" x2="21" y2="-2" stroke="#CE93D8" stroke-width="1.2"/>
+  <circle cx="21" cy="-2" r="1.2" fill="#AB47BC"/>
+  <circle cx="21" cy="-2" r="0.5" fill="#E1BEE7"/>
+  <!-- Right antenna -->
+  <rect x="40" y="1" width="2" height="3" fill="#B0BEC5"/>
+  <line x1="41" y1="1" x2="43" y2="-2" stroke="#CE93D8" stroke-width="1.2"/>
+  <circle cx="43" cy="-2" r="1.2" fill="#AB47BC"/>
+  <circle cx="43" cy="-2" r="0.5" fill="#E1BEE7"/>
+  <!-- Central command fin -->
+  <rect x="30" y="0" width="4" height="4" rx="0.5" fill="#7B1FA2" stroke="#AB47BC" stroke-width="0.5"/>
+  <rect x="31" y="0.5" width="2" height="3" fill="#AB47BC"/>
+
+  <!-- Visor ambient glow -->
+  <rect x="21" y="6" width="22" height="4" fill="#AB47BC" opacity="0.2"/>
+  <ellipse cx="32" cy="8" rx="10" ry="2.5" fill="#CE93D8" opacity="0.15"/>
+</svg>

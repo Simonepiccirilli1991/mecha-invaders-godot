@@ -12,26 +12,26 @@ const MAX_LEVELS: int = 10
 
 # Level configurations - difficulty increases each level
 var level_configs = [
-	# Level 1 - Easy
-	{ "rows": 4, "columns": 10, "speed": 50, "descent": 20, "shoot_interval": 2.5 },
-	# Level 2
-	{ "rows": 4, "columns": 10, "speed": 58, "descent": 22, "shoot_interval": 2.3 },
-	# Level 3
-	{ "rows": 5, "columns": 10, "speed": 66, "descent": 24, "shoot_interval": 2.1 },
-	# Level 4
-	{ "rows": 5, "columns": 11, "speed": 76, "descent": 26, "shoot_interval": 1.9 },
-	# Level 5
-	{ "rows": 6, "columns": 11, "speed": 87, "descent": 28, "shoot_interval": 1.7 },
-	# Level 6
-	{ "rows": 6, "columns": 12, "speed": 100, "descent": 30, "shoot_interval": 1.5 },
-	# Level 7
-	{ "rows": 7, "columns": 12, "speed": 115, "descent": 32, "shoot_interval": 1.3 },
-	# Level 8
-	{ "rows": 7, "columns": 12, "speed": 132, "descent": 34, "shoot_interval": 1.2 },
-	# Level 9
-	{ "rows": 8, "columns": 12, "speed": 152, "descent": 36, "shoot_interval": 1.0 },
-	# Level 10 - Hard
-	{ "rows": 8, "columns": 12, "speed": 175, "descent": 38, "shoot_interval": 0.9 }
+	# Level 1 - Easy: UFO Saucer
+	{ "rows": 4, "columns": 10, "speed": 50, "descent": 20, "shoot_interval": 2.5, "sprite": "res://sprites/enemy_ship_level_1.svg" },
+	# Level 2: Basic Fighter
+	{ "rows": 4, "columns": 10, "speed": 58, "descent": 22, "shoot_interval": 2.3, "sprite": "res://sprites/enemy_ship_level_2.svg" },
+	# Level 3: Tri-Fighter
+	{ "rows": 5, "columns": 10, "speed": 66, "descent": 24, "shoot_interval": 2.1, "sprite": "res://sprites/enemy_ship_level_3.svg" },
+	# Level 4: Crab Drone
+	{ "rows": 5, "columns": 11, "speed": 76, "descent": 26, "shoot_interval": 1.9, "sprite": "res://sprites/enemy_ship_level_4.svg" },
+	# Level 5: Bat Wing
+	{ "rows": 6, "columns": 11, "speed": 87, "descent": 28, "shoot_interval": 1.7, "sprite": "res://sprites/enemy_ship_level_5.svg" },
+	# Level 6: Horned Demon Ship
+	{ "rows": 6, "columns": 12, "speed": 100, "descent": 30, "shoot_interval": 1.5, "sprite": "res://sprites/enemy_ship_level_6.svg" },
+	# Level 7: Heavy Cruiser
+	{ "rows": 7, "columns": 12, "speed": 115, "descent": 32, "shoot_interval": 1.3, "sprite": "res://sprites/enemy_ship_level_7.svg" },
+	# Level 8: Skull Fighter
+	{ "rows": 7, "columns": 12, "speed": 132, "descent": 34, "shoot_interval": 1.2, "sprite": "res://sprites/enemy_ship_level_8.svg" },
+	# Level 9: Multi-Prong Warship
+	{ "rows": 8, "columns": 12, "speed": 152, "descent": 36, "shoot_interval": 1.0, "sprite": "res://sprites/enemy_ship_level_9.svg" },
+	# Level 10 - Hard: Dreadnought Boss
+	{ "rows": 8, "columns": 12, "speed": 175, "descent": 38, "shoot_interval": 0.9, "sprite": "res://sprites/enemy_ship_level_10.svg" }
 ]
 
 # Signals for UI updates
@@ -55,8 +55,12 @@ func start_game() -> void:
 	# Reset game state
 	current_state = GameState.PLAYING
 	score = 0
-	lives = 3
 	current_level = 1
+	
+	# Apply mecha lives modifier
+	var mecha_stats = MechaSelector.get_mecha_stats()
+	lives = 3 + mecha_stats["lives_modifier"]
+	print("GameManager: Starting with ", lives, " lives (modifier: ", mecha_stats["lives_modifier"], ")")
 	
 	# Emit initial values
 	score_changed.emit(score)

@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" width="64" height="80">
+<!-- SIEGFRIED - SRW-style heavy tank mecha. Both arms are hyper gatling cannons. -->
+<defs>
+  <filter id="gRed" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="1.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gGold" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="0.8" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<!-- LEFT GATLING CANNON HOUSING (drawn first / bottom z-layer) -->
+<g id="left-cannon-housing">
+  <rect x="0" y="22" width="16" height="22" rx="2" fill="#263238" stroke="#000" stroke-width="1.2"/>
+  <!-- Top plate -->
+  <rect x="1" y="22" width="14" height="5" rx="1" fill="#37474F" stroke="#000" stroke-width="0.6"/>
+  <!-- Rotating drum (circular cross-section detail) -->
+  <ellipse cx="8" cy="34" rx="5.5" ry="5.5" fill="#1C2833" stroke="#546E7A" stroke-width="1.2"/>
+  <ellipse cx="8" cy="34" rx="3.5" ry="3.5" fill="#263238" stroke="#546E7A" stroke-width="0.7"/>
+  <ellipse cx="8" cy="34" rx="5.5" ry="5.5" fill="none" stroke="#C62828" stroke-width="0.9"/>
+  <!-- Drum rotation spokes -->
+  <line x1="8"    y1="28.5" x2="8"    y2="31"   stroke="#546E7A" stroke-width="1"/>
+  <line x1="8"    y1="37"   x2="8"    y2="39.5"  stroke="#546E7A" stroke-width="1"/>
+  <line x1="2.5"  y1="34"   x2="5"    y2="34"    stroke="#546E7A" stroke-width="1"/>
+  <line x1="11"   y1="34"   x2="13.5" y2="34"    stroke="#546E7A" stroke-width="1"/>
+  <!-- Red accent strip at housing base -->
+  <rect x="0" y="41" width="16" height="3" fill="#C62828" stroke="#000" stroke-width="0.4"/>
+  <!-- Side intake fins -->
+  <rect x="0"  y="27" width="2" height="12" rx="0.5" fill="#37474F" stroke="#546E7A" stroke-width="0.4"/>
+  <rect x="14" y="27" width="2" height="12" rx="0.5" fill="#37474F" stroke="#546E7A" stroke-width="0.4"/>
+</g>
+
+<!-- RIGHT GATLING CANNON HOUSING -->
+<g id="right-cannon-housing">
+  <rect x="48" y="22" width="16" height="22" rx="2" fill="#263238" stroke="#000" stroke-width="1.2"/>
+  <rect x="49" y="22" width="14" height="5" rx="1" fill="#37474F" stroke="#000" stroke-width="0.6"/>
+  <ellipse cx="56" cy="34" rx="5.5" ry="5.5" fill="#1C2833" stroke="#546E7A" stroke-width="1.2"/>
+  <ellipse cx="56" cy="34" rx="3.5" ry="3.5" fill="#263238" stroke="#546E7A" stroke-width="0.7"/>
+  <ellipse cx="56" cy="34" rx="5.5" ry="5.5" fill="none" stroke="#C62828" stroke-width="0.9"/>
+  <line x1="56"   y1="28.5" x2="56"   y2="31"   stroke="#546E7A" stroke-width="1"/>
+  <line x1="56"   y1="37"   x2="56"   y2="39.5"  stroke="#546E7A" stroke-width="1"/>
+  <line x1="50.5" y1="34"   x2="53"   y2="34"    stroke="#546E7A" stroke-width="1"/>
+  <line x1="59"   y1="34"   x2="61.5" y2="34"    stroke="#546E7A" stroke-width="1"/>
+  <rect x="48" y="41" width="16" height="3" fill="#C62828" stroke="#000" stroke-width="0.4"/>
+  <rect x="48" y="27" width="2" height="12" rx="0.5" fill="#37474F" stroke="#546E7A" stroke-width="0.4"/>
+  <rect x="62" y="27" width="2" height="12" rx="0.5" fill="#37474F" stroke="#546E7A" stroke-width="0.4"/>
+</g>
+
+<!-- LEFT GATLING BARRELS: 3 barrels pointing upward, emerge from housing -->
+<g id="left-barrels">
+  <!-- Left barrel -->
+  <rect x="2"   y="3" width="3.5" height="21" rx="0.8" fill="#263238" stroke="#000" stroke-width="0.8"/>
+  <rect x="2.5" y="3" width="2.5" height="6"  rx="0.4" fill="#37474F"/>
+  <!-- Centre barrel (tallest — the dominant barrel) -->
+  <rect x="6.5" y="1" width="3.5" height="23" rx="0.8" fill="#263238" stroke="#000" stroke-width="0.8"/>
+  <rect x="7"   y="1" width="2.5" height="7"  rx="0.4" fill="#37474F"/>
+  <!-- Right barrel -->
+  <rect x="11"  y="3" width="3.5" height="21" rx="0.8" fill="#263238" stroke="#000" stroke-width="0.8"/>
+  <rect x="11.5" y="3" width="2.5" height="6" rx="0.4" fill="#37474F"/>
+  <!-- Mid reinforcement ring -->
+  <rect x="1.5" y="13" width="13" height="2" rx="0.5" fill="#546E7A" stroke="#000" stroke-width="0.5"/>
+  <!-- Barrel cluster guide ring (at housing top) -->
+  <rect x="1" y="20" width="14" height="3" rx="0.5" fill="#546E7A" stroke="#000" stroke-width="0.6"/>
+</g>
+
+<!-- RIGHT GATLING BARRELS: 3 barrels pointing upward -->
+<g id="right-barrels">
+  <!-- Left barrel -->
+  <rect x="50"  y="3" width="3.5" height="21" rx="0.8" fill="#263238" stroke="#000" stroke-width="0.8"/>
+  <rect x="50.5" y="3" width="2.5" height="6" rx="0.4" fill="#37474F"/>
+  <!-- Centre barrel (tallest) -->
+  <rect x="54.5" y="1" width="3.5" height="23" rx="0.8" fill="#263238" stroke="#000" stroke-width="0.8"/>
+  <rect x="55"   y="1" width="2.5" height="7"  rx="0.4" fill="#37474F"/>
+  <!-- Right barrel -->
+  <rect x="59"  y="3" width="3.5" height="21" rx="0.8" fill="#263238" stroke="#000" stroke-width="0.8"/>
+  <rect x="59.5" y="3" width="2.5" height="6" rx="0.4" fill="#37474F"/>
+  <!-- Mid reinforcement ring -->
+  <rect x="49.5" y="13" width="13" height="2" rx="0.5" fill="#546E7A" stroke="#000" stroke-width="0.5"/>
+  <!-- Barrel cluster guide ring -->
+  <rect x="49" y="20" width="14" height="3" rx="0.5" fill="#546E7A" stroke="#000" stroke-width="0.6"/>
+</g>
+
+<!-- LEFT MASSIVE SHOULDER ARMOR (covers barrel mid-section) -->
+<g id="lshoulder">
+  <polygon points="0,15 19,17 17,32 -1,30" fill="#37474F" stroke="#000" stroke-width="1.3"/>
+  <!-- Top highlight strip -->
+  <rect x="1" y="15" width="17" height="4.5" rx="0.5" fill="#546E7A" stroke="#000" stroke-width="0.5"/>
+  <!-- Red accent stripe -->
+  <rect x="1" y="27" width="15" height="2.5" fill="#C62828" stroke="#000" stroke-width="0.3"/>
+  <!-- Shoulder spike -->
+  <polygon points="9,15 11,9 13,15" fill="#546E7A" stroke="#000" stroke-width="0.5"/>
+  <!-- Panel line -->
+  <line x1="2" y1="21" x2="17" y2="22" stroke="#000" stroke-width="0.5" opacity="0.6"/>
+</g>
+
+<!-- RIGHT MASSIVE SHOULDER ARMOR -->
+<g id="rshoulder">
+  <polygon points="64,15 45,17 47,32 65,30" fill="#37474F" stroke="#000" stroke-width="1.3"/>
+  <rect x="46" y="15" width="17" height="4.5" rx="0.5" fill="#546E7A" stroke="#000" stroke-width="0.5"/>
+  <rect x="48" y="27" width="15" height="2.5" fill="#C62828" stroke="#000" stroke-width="0.3"/>
+  <polygon points="53,15 55,9 57,15" fill="#546E7A" stroke="#000" stroke-width="0.5"/>
+  <line x1="62" y1="21" x2="47" y2="22" stroke="#000" stroke-width="0.5" opacity="0.6"/>
+</g>
+
+<!-- TORSO (massive, intimidating) -->
+<g id="torso">
+  <rect x="14" y="18" width="36" height="21" rx="1" fill="#263238" stroke="#000" stroke-width="1.3"/>
+  <!-- Chest V-plate -->
+  <polygon points="32,20 18,24 18,37 32,38 46,37 46,24" fill="#37474F" stroke="#000" stroke-width="0.7"/>
+  <!-- Left pec armour block -->
+  <rect x="19" y="24" width="11" height="11" rx="0.5" fill="#263238" stroke="#C62828" stroke-width="0.9"/>
+  <rect x="20" y="25.5" width="9" height="3.5" rx="0.3" fill="#C62828" opacity="0.9"/>
+  <rect x="20.5" y="26" width="8" height="2.5" rx="0.2" fill="#FF5252"/>
+  <!-- Right pec armour block -->
+  <rect x="34" y="24" width="11" height="11" rx="0.5" fill="#263238" stroke="#C62828" stroke-width="0.9"/>
+  <rect x="35" y="25.5" width="9" height="3.5" rx="0.3" fill="#C62828" opacity="0.9"/>
+  <rect x="35.5" y="26" width="8" height="2.5" rx="0.2" fill="#FF5252"/>
+  <!-- Centre sternum -->
+  <rect x="30" y="24" width="4" height="11" rx="0.5" fill="#37474F" stroke="#546E7A" stroke-width="0.5"/>
+  <!-- Core power cell (red glow) -->
+  <rect x="30.5" y="27" width="3" height="5" rx="0.3" fill="#C62828" opacity="0.8" filter="url(#gRed)"/>
+  <rect x="31"   y="27.5" width="2" height="4" rx="0.2" fill="#FF5252"/>
+  <rect x="31.3" y="28"   width="1.4" height="3" fill="white" opacity="0.45"/>
+  <!-- Collar trim -->
+  <rect x="14" y="18" width="36" height="3" fill="#546E7A" stroke="#000" stroke-width="0.5"/>
+  <!-- Abdominal plates -->
+  <rect x="18" y="36" width="28" height="3" rx="0.5" fill="#37474F" stroke="#000" stroke-width="0.5"/>
+  <line x1="23" y1="36" x2="23" y2="39" stroke="#000" stroke-width="0.6"/>
+  <line x1="29" y1="36" x2="29" y2="39" stroke="#000" stroke-width="0.6"/>
+  <line x1="35" y1="36" x2="35" y2="39" stroke="#000" stroke-width="0.6"/>
+  <line x1="41" y1="36" x2="41" y2="39" stroke="#000" stroke-width="0.6"/>
+</g>
+
+<!-- WAIST (wide, imposing) -->
+<g id="waist">
+  <rect x="17" y="39" width="30" height="7" rx="1" fill="#263238" stroke="#000" stroke-width="1"/>
+  <!-- Front waist/skirt plate -->
+  <polygon points="19,46 45,46 47,54 17,54" fill="#37474F" stroke="#000" stroke-width="0.9"/>
+  <!-- Waist centre emblem -->
+  <rect x="29" y="47" width="6" height="5" rx="0.5" fill="#263238" stroke="#C62828" stroke-width="0.7"/>
+  <rect x="30" y="48" width="4" height="3" rx="0.3" fill="#C62828" opacity="0.7"/>
+  <!-- Left side skirt -->
+  <rect x="10" y="41" width="8" height="12" rx="1" fill="#37474F" stroke="#000" stroke-width="0.9"/>
+  <rect x="11" y="48" width="6" height="3" fill="#C62828"/>
+  <!-- Right side skirt -->
+  <rect x="46" y="41" width="8" height="12" rx="1" fill="#37474F" stroke="#000" stroke-width="0.9"/>
+  <rect x="47" y="48" width="6" height="3" fill="#C62828"/>
+</g>
+
+<!-- NECK (reinforced block) -->
+<rect x="24" y="18" width="16" height="3" fill="#263238" stroke="#000" stroke-width="0.8"/>
+
+<!-- HEAD (angular EVA-inspired helmet) -->
+<g id="head">
+  <!-- Angular helmet polygon -->
+  <polygon points="18,5 46,5 48,18 16,18" fill="#263238" stroke="#000" stroke-width="1.2"/>
+  <!-- Forehead section -->
+  <rect x="19" y="5" width="26" height="5" rx="0.5" fill="#37474F" stroke="#000" stroke-width="0.6"/>
+  <!-- Red accent band -->
+  <rect x="19" y="10" width="26" height="1.5" fill="#C62828" stroke="#000" stroke-width="0.3"/>
+  <!-- MONO-EYE VISOR (full-width glowing red slit) -->
+  <rect x="19" y="11.5" width="26" height="4.5" rx="0.5" fill="#1A0000" stroke="#000" stroke-width="0.6"/>
+  <rect x="20" y="12"   width="24" height="3.5" rx="0.3" fill="#B71C1C" filter="url(#gRed)"/>
+  <rect x="21" y="12.5" width="22" height="2.5" rx="0.2" fill="#EF5350"/>
+  <!-- Bright highlight in mono-eye -->
+  <rect x="28" y="12.8" width="8"  height="1.9" rx="0.2" fill="#FF5252" opacity="0.9"/>
+  <rect x="30" y="13"   width="4"  height="1.5" rx="0.1" fill="white" opacity="0.7"/>
+  <!-- Chin armour -->
+  <rect x="20" y="16" width="24" height="3" rx="0.5" fill="#37474F" stroke="#000" stroke-width="0.6"/>
+  <!-- Temple vents -->
+  <rect x="20" y="16.5" width="5" height="2" fill="#546E7A"/>
+  <rect x="39" y="16.5" width="5" height="2" fill="#546E7A"/>
+</g>
+
+<!-- SINGLE HORN (gold, EVA-style) -->
+<g id="horn">
+  <polygon points="32,0 28,7 36,7" fill="#FFD700" stroke="#8B6914" stroke-width="0.8" filter="url(#gGold)"/>
+  <!-- Horn base plate -->
+  <rect x="28.5" y="6" width="7" height="2" rx="0.5" fill="#FFC107" stroke="#8B6914" stroke-width="0.5"/>
+</g>
+
+<!-- LEGS (wide stance, tank proportions) -->
+<g id="legs">
+  <!-- LEFT LEG -->
+  <!-- Thigh -->
+  <rect x="13" y="54" width="14" height="12" rx="1" fill="#37474F" stroke="#000" stroke-width="1.1"/>
+  <rect x="14" y="55" width="12" height="5"  fill="#263238" stroke="#546E7A" stroke-width="0.4"/>
+  <!-- Red thigh accent -->
+  <rect x="13" y="63" width="14" height="2" fill="#C62828" stroke="#000" stroke-width="0.3"/>
+  <!-- Massive knee armour -->
+  <polygon points="11,65 29,65 28,73 12,73" fill="#546E7A" stroke="#000" stroke-width="0.9"/>
+  <rect x="13" y="66" width="14" height="4.5" fill="#37474F" stroke="#000" stroke-width="0.5"/>
+  <rect x="14" y="67" width="12" height="2" fill="#C62828"/>
+  <!-- Shin -->
+  <rect x="13" y="72" width="14" height="7" rx="1" fill="#263238" stroke="#000" stroke-width="1.1"/>
+  <rect x="14" y="74" width="6"  height="4" fill="#37474F" stroke="#000" stroke-width="0.5"/>
+  <!-- Armoured boot -->
+  <rect x="11" y="78" width="17" height="3" rx="1" fill="#37474F" stroke="#000" stroke-width="0.9"/>
+  <rect x="9"  y="79.5" width="6" height="1.5" rx="0.5" fill="#546E7A"/>
+
+  <!-- RIGHT LEG -->
+  <!-- Thigh -->
+  <rect x="37" y="54" width="14" height="12" rx="1" fill="#37474F" stroke="#000" stroke-width="1.1"/>
+  <rect x="38" y="55" width="12" height="5"  fill="#263238" stroke="#546E7A" stroke-width="0.4"/>
+  <!-- Red thigh accent -->
+  <rect x="37" y="63" width="14" height="2" fill="#C62828" stroke="#000" stroke-width="0.3"/>
+  <!-- Massive knee armour -->
+  <polygon points="35,65 53,65 52,73 36,73" fill="#546E7A" stroke="#000" stroke-width="0.9"/>
+  <rect x="37" y="66" width="14" height="4.5" fill="#37474F" stroke="#000" stroke-width="0.5"/>
+  <rect x="38" y="67" width="12" height="2" fill="#C62828"/>
+  <!-- Shin -->
+  <rect x="37" y="72" width="14" height="7" rx="1" fill="#263238" stroke="#000" stroke-width="1.1"/>
+  <rect x="44" y="74" width="6"  height="4" fill="#37474F" stroke="#000" stroke-width="0.5"/>
+  <!-- Armoured boot -->
+  <rect x="36" y="78" width="17" height="3" rx="1" fill="#37474F" stroke="#000" stroke-width="0.9"/>
+  <rect x="49" y="79.5" width="6" height="1.5" rx="0.5" fill="#546E7A"/>
+</g>
+
+<!-- GLOW EFFECTS on top of everything -->
+<!-- Left cannon barrel tip glows (muzzle flash hints) -->
+<circle cx="3.75" cy="3"   r="2.5"  fill="#FF5252" opacity="0.35" filter="url(#gRed)"/>
+<circle cx="3.75" cy="3"   r="1.4"  fill="#FF5252" opacity="0.8"/>
+<circle cx="3.75" cy="3"   r="0.65" fill="white"/>
+<circle cx="8.25"  cy="1.5" r="3"    fill="#FF5252" opacity="0.4"  filter="url(#gRed)"/>
+<circle cx="8.25"  cy="1.5" r="1.7"  fill="#FF5252" opacity="0.9"/>
+<circle cx="8.25"  cy="1.5" r="0.8"  fill="white"/>
+<circle cx="12.75" cy="3"   r="2.5"  fill="#FF5252" opacity="0.35" filter="url(#gRed)"/>
+<circle cx="12.75" cy="3"   r="1.4"  fill="#FF5252" opacity="0.8"/>
+<circle cx="12.75" cy="3"   r="0.65" fill="white"/>
+<!-- Right cannon barrel tip glows -->
+<circle cx="51.75" cy="3"   r="2.5"  fill="#FF5252" opacity="0.35" filter="url(#gRed)"/>
+<circle cx="51.75" cy="3"   r="1.4"  fill="#FF5252" opacity="0.8"/>
+<circle cx="51.75" cy="3"   r="0.65" fill="white"/>
+<circle cx="56.25"  cy="1.5" r="3"   fill="#FF5252" opacity="0.4"  filter="url(#gRed)"/>
+<circle cx="56.25"  cy="1.5" r="1.7"  fill="#FF5252" opacity="0.9"/>
+<circle cx="56.25"  cy="1.5" r="0.8"  fill="white"/>
+<circle cx="60.75" cy="3"   r="2.5"  fill="#FF5252" opacity="0.35" filter="url(#gRed)"/>
+<circle cx="60.75" cy="3"   r="1.4"  fill="#FF5252" opacity="0.8"/>
+<circle cx="60.75" cy="3"   r="0.65" fill="white"/>
+</svg>

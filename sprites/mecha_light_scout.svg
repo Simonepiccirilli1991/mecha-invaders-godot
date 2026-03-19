@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AQUILA — Light Scout | Weapon: BEAM RIFLE | SRW-style sprite 64x80 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" width="64" height="80">
+
+  <!-- === ENERGY EFFECTS (behind body) === -->
+  <ellipse cx="32" cy="27" rx="7" ry="6" fill="#00E5FF" opacity="0.12"/>
+  <ellipse cx="57" cy="2" rx="4" ry="3" fill="#00E5FF" opacity="0.25"/>
+
+  <!-- === FEET === -->
+  <path d="M 16 74 L 27 74 L 28 78 L 15 78 Z" fill="#0D47A1"/>
+  <rect x="17" y="75" width="8" height="2" fill="#00E5FF" opacity="0.7"/>
+  <path d="M 48 74 L 37 74 L 36 78 L 49 78 Z" fill="#0D47A1"/>
+  <rect x="39" y="75" width="8" height="2" fill="#00E5FF" opacity="0.7"/>
+
+  <!-- === LOWER LEGS / SHINS === -->
+  <path d="M 19 60 L 18 74 L 26 74 L 26 60 Z" fill="#1565C0"/>
+  <path d="M 45 60 L 46 74 L 38 74 L 38 60 Z" fill="#1565C0"/>
+  <!-- Shin armor plates -->
+  <rect x="19" y="63" width="6" height="8" fill="#1976D2" stroke="#0D47A1" stroke-width="0.5"/>
+  <rect x="39" y="63" width="6" height="8" fill="#1976D2" stroke="#0D47A1" stroke-width="0.5"/>
+
+  <!-- === KNEES === -->
+  <rect x="18" y="56" width="8" height="4" rx="1" fill="#1976D2"/>
+  <rect x="19" y="57" width="6" height="2" fill="#42A5F5"/>
+  <rect x="38" y="56" width="8" height="4" rx="1" fill="#1976D2"/>
+  <rect x="39" y="57" width="6" height="2" fill="#42A5F5"/>
+
+  <!-- === UPPER LEGS / THIGHS === -->
+  <path d="M 21 44 L 19 58 L 25 58 L 26 44 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
+  <path d="M 43 44 L 45 58 L 39 58 L 38 44 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
+
+  <!-- === WAIST === -->
+  <path d="M 19 38 L 17 44 L 47 44 L 45 38 Z" fill="#1E88E5" stroke="#0D47A1" stroke-width="0.6"/>
+  <!-- Front skirt panels -->
+  <path d="M 23 38 L 21 46 L 31 46 L 31 38 Z" fill="#1565C0"/>
+  <path d="M 41 38 L 43 46 L 33 46 L 33 38 Z" fill="#1565C0"/>
+  <!-- Center gem -->
+  <circle cx="32" cy="41" r="1.5" fill="#00E5FF"/>
+
+  <!-- === TORSO === -->
+  <path d="M 18 17 L 14 38 L 50 38 L 46 17 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.8"/>
+  <path d="M 22 19 L 19 36 L 45 36 L 41 19 Z" fill="#1976D2"/>
+  <!-- Left vents -->
+  <rect x="19" y="23" width="4" height="2" fill="#00E5FF"/>
+  <rect x="19" y="29" width="4" height="2" fill="#64B5F6"/>
+  <!-- Right vents -->
+  <rect x="41" y="23" width="4" height="2" fill="#00E5FF"/>
+  <rect x="41" y="29" width="4" height="2" fill="#64B5F6"/>
+  <!-- Cockpit core -->
+  <circle cx="32" cy="27" r="5" fill="#00B0FF"/>
+  <circle cx="32" cy="27" r="3.5" fill="#40C4FF"/>
+  <circle cx="32" cy="27" r="2" fill="#E3F2FD"/>
+
+  <!-- === SHOULDERS === -->
+  <path d="M 14 15 L 8 17 L 8 23 L 16 21 Z" fill="#1976D2" stroke="#0D47A1" stroke-width="0.6"/>
+  <path d="M 50 15 L 56 17 L 56 23 L 48 21 Z" fill="#1976D2" stroke="#0D47A1" stroke-width="0.6"/>
+
+  <!-- === LEFT ARM (shield) === -->
+  <path d="M 14 17 L 9 21 L 10 32 L 15 31 L 18 17 Z" fill="#1565C0"/>
+  <circle cx="10" cy="31" r="2.5" fill="#1976D2"/>
+  <path d="M 8 31 L 7 41 L 13 41 L 15 31 Z" fill="#1565C0"/>
+  <!-- Shield -->
+  <ellipse cx="7" cy="38" rx="5" ry="6" fill="#1976D2" stroke="#0D47A1" stroke-width="0.8"/>
+  <ellipse cx="7" cy="38" rx="3.5" ry="4.5" fill="#1E88E5"/>
+  <!-- Diamond emblem -->
+  <polygon points="7,34 9,38 7,42 5,38" fill="#00E5FF" opacity="0.5"/>
+  <circle cx="7" cy="38" r="1" fill="#00E5FF"/>
+
+  <!-- === RIGHT ARM (beam rifle) === -->
+  <path d="M 50 17 L 55 21 L 54 32 L 49 31 L 46 17 Z" fill="#1565C0"/>
+  <circle cx="54" cy="31" r="2.5" fill="#1976D2"/>
+  <path d="M 56 31 L 57 41 L 51 41 L 49 31 Z" fill="#1565C0"/>
+
+  <!-- === ★ BEAM RIFLE === -->
+  <!-- Rifle body -->
+  <rect x="54" y="20" width="6" height="16" rx="1" fill="#263238" stroke="#37474F" stroke-width="0.6"/>
+  <!-- Scope -->
+  <rect x="55" y="21" width="4" height="2" rx="0.5" fill="#455A64"/>
+  <circle cx="57" cy="22" r="0.8" fill="#00E5FF"/>
+  <!-- Magazine -->
+  <rect x="54" y="28" width="3" height="5" rx="0.5" fill="#37474F"/>
+  <!-- Trigger area -->
+  <rect x="55" y="34" width="4" height="1.5" rx="0.5" fill="#546E7A"/>
+  <!-- Rifle grip/hand -->
+  <rect x="54" y="33" width="5" height="5" rx="1" fill="#37474F" stroke="#1C2833"/>
+  <!-- Barrel -->
+  <rect x="55" y="4" width="4" height="18" fill="#37474F" stroke="#263238" stroke-width="0.4"/>
+  <!-- Barrel tip cap -->
+  <rect x="54.5" y="3" width="5" height="3" rx="0.5" fill="#455A64"/>
+  <!-- Energy glow at barrel tip -->
+  <rect x="55" y="1" width="4" height="4" fill="#00E5FF" opacity="0.9"/>
+  <ellipse cx="57" cy="2" rx="3" ry="2" fill="#00E5FF" opacity="0.7"/>
+  <ellipse cx="57" cy="1" rx="2" ry="1.5" fill="#FFFFFF" opacity="0.8"/>
+  <!-- Beam line shooting effect -->
+  <line x1="57" y1="0" x2="57" y2="3" stroke="#00E5FF" stroke-width="3" opacity="0.6"/>
+
+  <!-- === NECK === -->
+  <rect x="28" y="14" width="8" height="3" fill="#0D47A1"/>
+
+  <!-- === HEAD === -->
+  <!-- Side vents -->
+  <rect x="24" y="7" width="1.5" height="5" fill="#42A5F5"/>
+  <rect x="38.5" y="7" width="1.5" height="5" fill="#42A5F5"/>
+  <!-- Main head box -->
+  <rect x="24" y="4" width="16" height="10" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
+  <!-- Face plate -->
+  <rect x="25" y="5" width="14" height="8" fill="#1976D2"/>
+  <!-- Forehead sensor -->
+  <circle cx="32" cy="6" r="1" fill="#00E5FF"/>
+  <!-- Left eye -->
+  <rect x="25" y="8" width="5" height="2.5" rx="0.5" fill="#00E5FF"/>
+  <rect x="25.5" y="8.3" width="2" height="1" fill="#FFFFFF" opacity="0.5"/>
+  <!-- Right eye -->
+  <rect x="34" y="8" width="5" height="2.5" rx="0.5" fill="#00E5FF"/>
+  <rect x="34.5" y="8.3" width="2" height="1" fill="#FFFFFF" opacity="0.5"/>
+  <!-- Mouth guard -->
+  <rect x="27" y="11" width="10" height="2" fill="#1976D2"/>
+  <line x1="27" y1="12" x2="37" y2="12" stroke="#0D47A1" stroke-width="0.5"/>
+
+  <!-- V-FIN -->
+  <path d="M 30 4 L 27 0 L 32 2 Z" fill="#FFD700"/>
+  <path d="M 34 4 L 37 0 L 32 2 Z" fill="#FFD700"/>
+  <!-- Center crest -->
+  <rect x="31" y="1" width="2" height="3" fill="#FFEB3B"/>
+
+</svg>

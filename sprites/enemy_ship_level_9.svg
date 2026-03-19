@@ -1,0 +1,15 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Level 9: Multi-Prong Warship -->
+  <circle cx="24" cy="24" r="9" fill="#dd3300"/>
+  <circle cx="24" cy="24" r="13" fill="none" stroke="#ff5500" stroke-width="3"/>
+  <polygon points="24,4 21,14 27,14" fill="#ff4400"/>
+  <polygon points="24,44 21,34 27,34" fill="#ff4400"/>
+  <polygon points="4,24 14,21 14,27" fill="#ff4400"/>
+  <polygon points="44,24 34,21 34,27" fill="#ff4400"/>
+  <polygon points="8,8 17,16 13,20" fill="#cc3300"/>
+  <polygon points="40,8 31,16 35,20" fill="#cc3300"/>
+  <polygon points="8,40 17,32 13,28" fill="#cc3300"/>
+  <polygon points="40,40 31,32 35,28" fill="#cc3300"/>
+  <circle cx="24" cy="24" r="4" fill="#ff8800"/>
+  <circle cx="24" cy="24" r="2" fill="#ffff00"/>
+</svg>
