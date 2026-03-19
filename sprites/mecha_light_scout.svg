@@ -1,126 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- AQUILA — Light Scout | Weapon: BEAM RIFLE | SRW-style sprite 64x80 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" width="64" height="80">
+<!-- GOLDION — The Star Defender | Inspired by Goldrake / Grendizer -->
+<!-- Royal Blue #0D47A1 · Gold #FFD700 · Silver #CFD8DC · Cyan #00E5FF -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100" width="80" height="100">
 
-  <!-- === ENERGY EFFECTS (behind body) === -->
-  <ellipse cx="32" cy="27" rx="7" ry="6" fill="#00E5FF" opacity="0.12"/>
-  <ellipse cx="57" cy="2" rx="4" ry="3" fill="#00E5FF" opacity="0.25"/>
+  <!-- THRUSTER GLOW (feet) -->
+  <ellipse cx="24" cy="96" rx="9" ry="3" fill="#00E5FF" opacity="0.35"/>
+  <ellipse cx="56" cy="96" rx="9" ry="3" fill="#00E5FF" opacity="0.35"/>
 
-  <!-- === FEET === -->
-  <path d="M 16 74 L 27 74 L 28 78 L 15 78 Z" fill="#0D47A1"/>
-  <rect x="17" y="75" width="8" height="2" fill="#00E5FF" opacity="0.7"/>
-  <path d="M 48 74 L 37 74 L 36 78 L 49 78 Z" fill="#0D47A1"/>
-  <rect x="39" y="75" width="8" height="2" fill="#00E5FF" opacity="0.7"/>
+  <!-- FEET (swept forward, aerodynamic) -->
+  <polygon points="11,90 35,90 37,99 9,99"  fill="#0D47A1"/>
+  <polygon points="12,91 34,91 36,98 11,98" fill="#1565C0"/>
+  <rect x="13" y="94" width="10" height="2" fill="#00E5FF" opacity="0.8"/>
+  <polygon points="45,90 69,90 71,99 43,99"  fill="#0D47A1"/>
+  <polygon points="46,91 68,91 70,98 45,98"  fill="#1565C0"/>
+  <rect x="57" y="94" width="10" height="2" fill="#00E5FF" opacity="0.8"/>
 
-  <!-- === LOWER LEGS / SHINS === -->
-  <path d="M 19 60 L 18 74 L 26 74 L 26 60 Z" fill="#1565C0"/>
-  <path d="M 45 60 L 46 74 L 38 74 L 38 60 Z" fill="#1565C0"/>
-  <!-- Shin armor plates -->
-  <rect x="19" y="63" width="6" height="8" fill="#1976D2" stroke="#0D47A1" stroke-width="0.5"/>
-  <rect x="39" y="63" width="6" height="8" fill="#1976D2" stroke="#0D47A1" stroke-width="0.5"/>
+  <!-- SHINS (streamlined) -->
+  <path d="M 17 68 L 16 90 L 34 90 L 34 68 Z" fill="#1565C0"/>
+  <path d="M 18 69 L 17 89 L 33 89 L 33 69 Z" fill="#1976D2"/>
+  <rect x="19" y="72" width="12" height="8" rx="1" fill="#1E88E5" stroke="#0D47A1" stroke-width="0.5"/>
+  <rect x="20" y="73" width="8"  height="3" fill="#42A5F5"/>
+  <path d="M 63 68 L 64 90 L 46 90 L 46 68 Z" fill="#1565C0"/>
+  <path d="M 62 69 L 63 89 L 47 89 L 47 69 Z" fill="#1976D2"/>
+  <rect x="49" y="72" width="12" height="8" rx="1" fill="#1E88E5" stroke="#0D47A1" stroke-width="0.5"/>
+  <rect x="52" y="73" width="8"  height="3" fill="#42A5F5"/>
 
-  <!-- === KNEES === -->
-  <rect x="18" y="56" width="8" height="4" rx="1" fill="#1976D2"/>
-  <rect x="19" y="57" width="6" height="2" fill="#42A5F5"/>
-  <rect x="38" y="56" width="8" height="4" rx="1" fill="#1976D2"/>
-  <rect x="39" y="57" width="6" height="2" fill="#42A5F5"/>
+  <!-- KNEES -->
+  <rect x="16" y="62" width="18" height="7" rx="2" fill="#1976D2"/>
+  <rect x="17" y="63" width="16" height="5" fill="#42A5F5"/>
+  <rect x="18" y="64" width="12" height="2" fill="#00E5FF" opacity="0.9"/>
+  <rect x="46" y="62" width="18" height="7" rx="2" fill="#1976D2"/>
+  <rect x="47" y="63" width="16" height="5" fill="#42A5F5"/>
+  <rect x="50" y="64" width="12" height="2" fill="#00E5FF" opacity="0.9"/>
 
-  <!-- === UPPER LEGS / THIGHS === -->
-  <path d="M 21 44 L 19 58 L 25 58 L 26 44 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
-  <path d="M 43 44 L 45 58 L 39 58 L 38 44 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
+  <!-- THIGHS -->
+  <path d="M 18 48 L 16 63 L 34 63 L 33 48 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
+  <path d="M 19 49 L 17 62 L 33 62 L 32 49 Z" fill="#1976D2"/>
+  <path d="M 47 48 L 64 63 L 48 63 L 47 48 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
+  <path d="M 48 49 L 63 62 L 49 62 L 48 49 Z" fill="#1976D2"/>
 
-  <!-- === WAIST === -->
-  <path d="M 19 38 L 17 44 L 47 44 L 45 38 Z" fill="#1E88E5" stroke="#0D47A1" stroke-width="0.6"/>
-  <!-- Front skirt panels -->
-  <path d="M 23 38 L 21 46 L 31 46 L 31 38 Z" fill="#1565C0"/>
-  <path d="M 41 38 L 43 46 L 33 46 L 33 38 Z" fill="#1565C0"/>
-  <!-- Center gem -->
-  <circle cx="32" cy="41" r="1.5" fill="#00E5FF"/>
+  <!-- WAIST + SKIRT PANELS -->
+  <path d="M 16 42 L 14 50 L 66 50 L 64 42 Z" fill="#1E88E5" stroke="#0D47A1" stroke-width="0.6"/>
+  <path d="M 20 42 L 18 52 L 30 52 L 30 42 Z" fill="#1565C0"/>
+  <path d="M 60 42 L 62 52 L 50 52 L 50 42 Z" fill="#1565C0"/>
+  <!-- Center buckle -->
+  <circle cx="40" cy="45" r="3" fill="#FFD700"/>
+  <circle cx="40" cy="45" r="2" fill="#FFF9C4"/>
+  <circle cx="40" cy="45" r="1" fill="#00E5FF"/>
 
-  <!-- === TORSO === -->
-  <path d="M 18 17 L 14 38 L 50 38 L 46 17 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.8"/>
-  <path d="M 22 19 L 19 36 L 45 36 L 41 19 Z" fill="#1976D2"/>
-  <!-- Left vents -->
-  <rect x="19" y="23" width="4" height="2" fill="#00E5FF"/>
-  <rect x="19" y="29" width="4" height="2" fill="#64B5F6"/>
-  <!-- Right vents -->
-  <rect x="41" y="23" width="4" height="2" fill="#00E5FF"/>
-  <rect x="41" y="29" width="4" height="2" fill="#64B5F6"/>
-  <!-- Cockpit core -->
-  <circle cx="32" cy="27" r="5" fill="#00B0FF"/>
-  <circle cx="32" cy="27" r="3.5" fill="#40C4FF"/>
-  <circle cx="32" cy="27" r="2" fill="#E3F2FD"/>
+  <!-- TORSO -->
+  <path d="M 14 18 L 12 42 L 68 42 L 66 18 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="0.8"/>
+  <path d="M 16 20 L 14 40 L 66 40 L 64 20 Z" fill="#1976D2"/>
+  <!-- Large chest crystal GEM (Goldrake signature) -->
+  <circle cx="40" cy="30" r="9"  fill="#0D47A1"/>
+  <circle cx="40" cy="30" r="7.5" fill="#1565C0"/>
+  <polygon points="40,21 47,28 47,32 40,39 33,32 33,28" fill="#00B0FF"/>
+  <polygon points="40,23 46,29 46,31 40,37 34,31 34,29" fill="#40C4FF"/>
+  <polygon points="40,25 44,29 44,31 40,35 36,31 36,29" fill="#E3F2FD"/>
+  <!-- Gem highlight -->
+  <circle cx="37" cy="27" r="1.5" fill="white" opacity="0.7"/>
+  <!-- Torso vents -->
+  <rect x="14" y="24" width="6" height="3"  rx="0.5" fill="#00E5FF" opacity="0.8"/>
+  <rect x="14" y="29" width="6" height="3"  rx="0.5" fill="#42A5F5" opacity="0.8"/>
+  <rect x="14" y="34" width="6" height="3"  rx="0.5" fill="#64B5F6" opacity="0.7"/>
+  <rect x="60" y="24" width="6" height="3"  rx="0.5" fill="#00E5FF" opacity="0.8"/>
+  <rect x="60" y="29" width="6" height="3"  rx="0.5" fill="#42A5F5" opacity="0.8"/>
+  <rect x="60" y="34" width="6" height="3"  rx="0.5" fill="#64B5F6" opacity="0.7"/>
 
-  <!-- === SHOULDERS === -->
-  <path d="M 14 15 L 8 17 L 8 23 L 16 21 Z" fill="#1976D2" stroke="#0D47A1" stroke-width="0.6"/>
-  <path d="M 50 15 L 56 17 L 56 23 L 48 21 Z" fill="#1976D2" stroke="#0D47A1" stroke-width="0.6"/>
+  <!-- DISC SHOULDERS (Goldrake's signature saucer-like pauldrons) -->
+  <!-- Left disc -->
+  <ellipse cx="8"  cy="26" rx="10" ry="6" fill="#1565C0" stroke="#0D47A1" stroke-width="0.8"/>
+  <ellipse cx="8"  cy="26" rx="7.5" ry="4.5" fill="#1976D2"/>
+  <ellipse cx="8"  cy="26" rx="5"   ry="3"   fill="#1E88E5"/>
+  <line x1="-2" y1="26" x2="18" y2="26" stroke="#00E5FF" stroke-width="0.7" opacity="0.8"/>
+  <!-- Right disc -->
+  <ellipse cx="72" cy="26" rx="10" ry="6" fill="#1565C0" stroke="#0D47A1" stroke-width="0.8"/>
+  <ellipse cx="72" cy="26" rx="7.5" ry="4.5" fill="#1976D2"/>
+  <ellipse cx="72" cy="26" rx="5"   ry="3"   fill="#1E88E5"/>
+  <line x1="62" y1="26" x2="82" y2="26" stroke="#00E5FF" stroke-width="0.7" opacity="0.8"/>
 
-  <!-- === LEFT ARM (shield) === -->
-  <path d="M 14 17 L 9 21 L 10 32 L 15 31 L 18 17 Z" fill="#1565C0"/>
-  <circle cx="10" cy="31" r="2.5" fill="#1976D2"/>
-  <path d="M 8 31 L 7 41 L 13 41 L 15 31 Z" fill="#1565C0"/>
-  <!-- Shield -->
-  <ellipse cx="7" cy="38" rx="5" ry="6" fill="#1976D2" stroke="#0D47A1" stroke-width="0.8"/>
-  <ellipse cx="7" cy="38" rx="3.5" ry="4.5" fill="#1E88E5"/>
-  <!-- Diamond emblem -->
-  <polygon points="7,34 9,38 7,42 5,38" fill="#00E5FF" opacity="0.5"/>
-  <circle cx="7" cy="38" r="1" fill="#00E5FF"/>
+  <!-- LEFT ARM -->
+  <path d="M 12 20 L 6  23 L 7  38 L 13 37 L 16 20 Z" fill="#1565C0"/>
+  <rect x="6"  y="36" width="9"  height="12" rx="1" fill="#1565C0"/>
+  <rect x="7"  y="37" width="7"  height="10" rx="1" fill="#1976D2"/>
+  <!-- LEFT HAND / UFO DISC BLADE STORED -->
+  <ellipse cx="10" cy="52" rx="6" ry="3.5" fill="#FFD700"/>
+  <ellipse cx="10" cy="52" rx="4" ry="2.5" fill="#FFF176"/>
+  <circle  cx="10" cy="52" r="1.5" fill="#00E5FF"/>
 
-  <!-- === RIGHT ARM (beam rifle) === -->
-  <path d="M 50 17 L 55 21 L 54 32 L 49 31 L 46 17 Z" fill="#1565C0"/>
-  <circle cx="54" cy="31" r="2.5" fill="#1976D2"/>
-  <path d="M 56 31 L 57 41 L 51 41 L 49 31 Z" fill="#1565C0"/>
+  <!-- RIGHT ARM -->
+  <path d="M 68 20 L 74 23 L 73 38 L 67 37 L 64 20 Z" fill="#1565C0"/>
+  <rect x="65" y="36" width="9"  height="12" rx="1" fill="#1565C0"/>
+  <rect x="66" y="37" width="7"  height="10" rx="1" fill="#1976D2"/>
+  <!-- RIGHT HAND / SPACE LANCE weapon -->
+  <rect x="71" y="10" width="4"  height="28" rx="1" fill="#263238"/>
+  <rect x="72" y="11" width="2"  height="26" fill="#37474F"/>
+  <!-- Lance tip (energy spear) -->
+  <polygon points="70,8 73,2 76,8" fill="#FFD700"/>
+  <polygon points="71,8 73,4 75,8" fill="#FFF176"/>
+  <ellipse cx="73" cy="4" rx="2" ry="1.5" fill="#00E5FF" opacity="0.9"/>
 
-  <!-- === ★ BEAM RIFLE === -->
-  <!-- Rifle body -->
-  <rect x="54" y="20" width="6" height="16" rx="1" fill="#263238" stroke="#37474F" stroke-width="0.6"/>
-  <!-- Scope -->
-  <rect x="55" y="21" width="4" height="2" rx="0.5" fill="#455A64"/>
-  <circle cx="57" cy="22" r="0.8" fill="#00E5FF"/>
-  <!-- Magazine -->
-  <rect x="54" y="28" width="3" height="5" rx="0.5" fill="#37474F"/>
-  <!-- Trigger area -->
-  <rect x="55" y="34" width="4" height="1.5" rx="0.5" fill="#546E7A"/>
-  <!-- Rifle grip/hand -->
-  <rect x="54" y="33" width="5" height="5" rx="1" fill="#37474F" stroke="#1C2833"/>
-  <!-- Barrel -->
-  <rect x="55" y="4" width="4" height="18" fill="#37474F" stroke="#263238" stroke-width="0.4"/>
-  <!-- Barrel tip cap -->
-  <rect x="54.5" y="3" width="5" height="3" rx="0.5" fill="#455A64"/>
-  <!-- Energy glow at barrel tip -->
-  <rect x="55" y="1" width="4" height="4" fill="#00E5FF" opacity="0.9"/>
-  <ellipse cx="57" cy="2" rx="3" ry="2" fill="#00E5FF" opacity="0.7"/>
-  <ellipse cx="57" cy="1" rx="2" ry="1.5" fill="#FFFFFF" opacity="0.8"/>
-  <!-- Beam line shooting effect -->
-  <line x1="57" y1="0" x2="57" y2="3" stroke="#00E5FF" stroke-width="3" opacity="0.6"/>
+  <!-- NECK -->
+  <rect x="33" y="15" width="14" height="4" rx="1" fill="#0D47A1"/>
 
-  <!-- === NECK === -->
-  <rect x="28" y="14" width="8" height="3" fill="#0D47A1"/>
-
-  <!-- === HEAD === -->
-  <!-- Side vents -->
-  <rect x="24" y="7" width="1.5" height="5" fill="#42A5F5"/>
-  <rect x="38.5" y="7" width="1.5" height="5" fill="#42A5F5"/>
-  <!-- Main head box -->
-  <rect x="24" y="4" width="16" height="10" fill="#1565C0" stroke="#0D47A1" stroke-width="0.6"/>
-  <!-- Face plate -->
-  <rect x="25" y="5" width="14" height="8" fill="#1976D2"/>
+  <!-- HEAD -->
+  <!-- Main head block -->
+  <rect x="22" y="5"  width="36" height="11" rx="1" fill="#0D47A1" stroke="#0A2F6A" stroke-width="0.8"/>
+  <rect x="23" y="6"  width="34" height="9"  rx="1" fill="#1565C0"/>
   <!-- Forehead sensor -->
-  <circle cx="32" cy="6" r="1" fill="#00E5FF"/>
-  <!-- Left eye -->
-  <rect x="25" y="8" width="5" height="2.5" rx="0.5" fill="#00E5FF"/>
-  <rect x="25.5" y="8.3" width="2" height="1" fill="#FFFFFF" opacity="0.5"/>
-  <!-- Right eye -->
-  <rect x="34" y="8" width="5" height="2.5" rx="0.5" fill="#00E5FF"/>
-  <rect x="34.5" y="8.3" width="2" height="1" fill="#FFFFFF" opacity="0.5"/>
-  <!-- Mouth guard -->
-  <rect x="27" y="11" width="10" height="2" fill="#1976D2"/>
-  <line x1="27" y1="12" x2="37" y2="12" stroke="#0D47A1" stroke-width="0.5"/>
+  <circle cx="40" cy="8" r="1.5" fill="#FFD700"/>
+  <circle cx="40" cy="8" r="0.8" fill="#FFF9C4"/>
+  <!-- Side vents -->
+  <rect x="20" y="7"  width="3"  height="7"  rx="0.5" fill="#42A5F5"/>
+  <rect x="57" y="7"  width="3"  height="7"  rx="0.5" fill="#42A5F5"/>
+  <!-- Visor (wide cyan) -->
+  <rect x="24" y="9"  width="32" height="4"  rx="1" fill="#00E5FF"/>
+  <rect x="25" y="9.5" width="13" height="2.5" rx="0.5" fill="#E3F2FD" opacity="0.6"/>
+  <rect x="42" y="9.5" width="13" height="2.5" rx="0.5" fill="#E3F2FD" opacity="0.6"/>
+  <!-- Nose bridge divider -->
+  <rect x="38" y="9"  width="4"  height="4"  fill="#0D47A1"/>
+  <!-- Chin -->
+  <rect x="24" y="14" width="32" height="2"  rx="0.5" fill="#1565C0"/>
 
-  <!-- V-FIN -->
-  <path d="M 30 4 L 27 0 L 32 2 Z" fill="#FFD700"/>
-  <path d="M 34 4 L 37 0 L 32 2 Z" fill="#FFD700"/>
-  <!-- Center crest -->
-  <rect x="31" y="1" width="2" height="3" fill="#FFEB3B"/>
-
+  <!-- IMPERIAL CREST (Goldrake's tall golden crown) -->
+  <!-- Left fin -->
+  <polygon points="24,5 20,0 28,3" fill="#1565C0"/>
+  <!-- Right fin -->
+  <polygon points="56,5 60,0 52,3" fill="#1565C0"/>
+  <!-- TALL GOLD CENTER CROWN -->
+  <polygon points="36,5 44,5 43,0 40,-5 37,0" fill="#FFD700"/>
+  <polygon points="37,5 43,5 42,1 40,-3 38,1" fill="#FFF176"/>
+  <!-- Crown gem at very top -->
+  <circle cx="40" cy="-4" r="2.5" fill="#00E5FF"/>
+  <circle cx="40" cy="-4" r="1.5" fill="#E3F2FD"/>
+  <circle cx="40" cy="-4" r="0.7" fill="white"/>
+  <!-- Crown base ornament lines -->
+  <line x1="36" y1="5" x2="44" y2="5" stroke="#FFD700" stroke-width="1.2"/>
+  <circle cx="36" cy="5" r="1" fill="#FFD700"/>
+  <circle cx="44" cy="5" r="1" fill="#FFD700"/>
 </svg>

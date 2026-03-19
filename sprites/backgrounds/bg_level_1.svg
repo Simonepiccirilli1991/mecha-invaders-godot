@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960">
+  <defs>
+    <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050202"/>
+      <stop offset="45%" stop-color="#2a0800"/>
+      <stop offset="75%" stop-color="#7a1400"/>
+      <stop offset="100%" stop-color="#c43000"/>
+    </linearGradient>
+    <linearGradient id="ground1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0500"/>
+      <stop offset="100%" stop-color="#080100"/>
+    </linearGradient>
+    <radialGradient id="horizonglow1" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#ff4400" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff4400" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1440" height="960" fill="url(#sky1)"/>
+
+  <!-- Horizon fire glow -->
+  <ellipse cx="720" cy="720" rx="900" ry="220" fill="#dd2200" opacity="0.45"/>
+  <rect x="0" y="680" width="1440" height="280" fill="url(#horizonglow1)"/>
+
+  <!-- Dim stars through smoke -->
+  <g fill="#ffddcc" opacity="0.25">
+    <circle cx="80" cy="40" r="1.2"/><circle cx="200" cy="25" r="1"/><circle cx="340" cy="55" r="1.4"/>
+    <circle cx="490" cy="18" r="1"/><circle cx="630" cy="45" r="1.2"/><circle cx="780" cy="30" r="1"/>
+    <circle cx="920" cy="50" r="1.4"/><circle cx="1060" cy="22" r="1"/><circle cx="1200" cy="42" r="1.2"/>
+    <circle cx="1360" cy="15" r="1"/><circle cx="150" cy="90" r="1"/><circle cx="420" cy="110" r="1.2"/>
+    <circle cx="700" cy="80" r="1"/><circle cx="1000" cy="100" r="1.4"/><circle cx="1280" cy="70" r="1"/>
+  </g>
+
+  <!-- Smoke billows -->
+  <g fill="#140800" opacity="0.7">
+    <ellipse cx="150" cy="370" rx="190" ry="90"/>
+    <ellipse cx="380" cy="320" rx="210" ry="95"/>
+    <ellipse cx="640" cy="350" rx="230" ry="85"/>
+    <ellipse cx="870" cy="300" rx="200" ry="80"/>
+    <ellipse cx="1100" cy="340" rx="220" ry="90"/>
+    <ellipse cx="1330" cy="360" rx="170" ry="80"/>
+    <ellipse cx="280" cy="290" rx="150" ry="70"/>
+    <ellipse cx="760" cy="270" rx="180" ry="75"/>
+    <ellipse cx="1200" cy="295" rx="160" ry="65"/>
+  </g>
+
+  <!-- Ground -->
+  <rect y="760" width="1440" height="200" fill="url(#ground1)"/>
+
+  <!-- City silhouettes - back layer (darker) -->
+  <g fill="#0a0200">
+    <rect x="0" y="510" width="55" height="260"/><rect x="48" y="460" width="38" height="310"/>
+    <rect x="80" y="530" width="50" height="240"/><rect x="125" y="475" width="42" height="295"/>
+    <rect x="162" y="495" width="60" height="275"/><rect x="218" y="440" width="48" height="330"/>
+    <rect x="262" y="515" width="52" height="255"/><rect x="310" y="465" width="38" height="305"/>
+    <rect x="344" y="445" width="65" height="325"/><rect x="405" y="485" width="42" height="285"/>
+    <rect x="443" y="505" width="58" height="265"/><rect x="497" y="430" width="48" height="340"/>
+    <rect x="542" y="470" width="52" height="300"/><rect x="590" y="450" width="38" height="320"/>
+    <rect x="625" y="490" width="68" height="280"/><rect x="690" y="435" width="42" height="335"/>
+    <rect x="729" y="465" width="58" height="305"/><rect x="784" y="505" width="48" height="265"/>
+    <rect x="828" y="445" width="62" height="325"/><rect x="887" y="475" width="42" height="295"/>
+    <rect x="926" y="495" width="52" height="275"/><rect x="975" y="425" width="68" height="345"/>
+    <rect x="1040" y="465" width="38" height="305"/><rect x="1075" y="485" width="58" height="285"/>
+    <rect x="1130" y="455" width="48" height="315"/><rect x="1175" y="505" width="42" height="265"/>
+    <rect x="1214" y="445" width="62" height="325"/><rect x="1273" y="475" width="52" height="295"/>
+    <rect x="1322" y="495" width="48" height="275"/><rect x="1367" y="435" width="73" height="335"/>
+  </g>
+
+  <!-- Building fire glow -->
+  <g fill="#ff5500" opacity="0.5">
+    <rect x="52" y="470" width="7" height="10"/><rect x="64" y="488" width="6" height="9"/>
+    <rect x="130" y="482" width="9" height="12"/><rect x="225" y="448" width="7" height="10"/>
+    <rect x="237" y="468" width="6" height="9"/><rect x="352" y="453" width="9" height="12"/>
+    <rect x="365" y="473" width="7" height="10"/><rect x="504" y="438" width="9" height="12"/>
+    <rect x="518" y="458" width="7" height="10"/><rect x="633" y="498" width="9" height="12"/>
+    <rect x="698" y="443" width="7" height="10"/><rect x="836" y="452" width="9" height="12"/>
+    <rect x="850" y="472" width="7" height="10"/><rect x="982" y="433" width="9" height="12"/>
+    <rect x="996" y="453" width="7" height="10"/><rect x="1137" y="462" width="9" height="12"/>
+    <rect x="1181" y="513" width="7" height="10"/><rect x="1221" y="452" width="9" height="12"/>
+    <rect x="1280" y="482" width="7" height="10"/>
+  </g>
+
+  <!-- Flames at ground level -->
+  <g fill="#cc3300" opacity="0.85">
+    <polygon points="60,760 85,680 110,760"/>
+    <polygon points="90,760 110,705 130,760"/>
+    <polygon points="200,760 228,670 256,760"/>
+    <polygon points="225,760 248,700 271,760"/>
+    <polygon points="380,760 410,660 440,760"/>
+    <polygon points="408,760 432,695 456,760"/>
+    <polygon points="550,760 582,655 614,760"/>
+    <polygon points="578,760 602,690 626,760"/>
+    <polygon points="720,760 752,662 784,760"/>
+    <polygon points="748,760 774,698 800,760"/>
+    <polygon points="900,760 930,658 960,760"/>
+    <polygon points="925,760 950,694 975,760"/>
+    <polygon points="1080,760 1112,655 1144,760"/>
+    <polygon points="1108,760 1132,690 1156,760"/>
+    <polygon points="1260,760 1290,660 1320,760"/>
+    <polygon points="1285,760 1308,695 1331,760"/>
+    <polygon points="1390,760 1412,672 1434,760"/>
+  </g>
+  <g fill="#ff6600" opacity="0.65">
+    <polygon points="68,760 84,698 100,760"/>
+    <polygon points="208,760 224,682 240,760"/>
+    <polygon points="388,760 404,668 420,760"/>
+    <polygon points="558,760 574,667 590,760"/>
+    <polygon points="728,760 744,672 760,760"/>
+    <polygon points="908,760 924,668 940,760"/>
+    <polygon points="1088,760 1104,665 1120,760"/>
+    <polygon points="1268,760 1284,670 1300,760"/>
+    <polygon points="1394,760 1408,680 1422,760"/>
+  </g>
+  <g fill="#ffaa00" opacity="0.4">
+    <polygon points="72,760 82,708 92,760"/>
+    <polygon points="212,760 222,690 232,760"/>
+    <polygon points="392,760 402,675 412,760"/>
+    <polygon points="562,760 572,675 582,760"/>
+    <polygon points="732,760 742,680 752,760"/>
+    <polygon points="912,760 922,676 932,760"/>
+    <polygon points="1092,760 1102,672 1112,760"/>
+    <polygon points="1272,760 1282,678 1292,760"/>
+  </g>
+
+  <!-- Ember particles -->
+  <g fill="#ff8800" opacity="0.5">
+    <circle cx="120" cy="640" r="2"/><circle cx="180" cy="580" r="1.5"/><circle cx="300" cy="620" r="2"/>
+    <circle cx="440" cy="560" r="1.5"/><circle cx="560" cy="600" r="2"/><circle cx="680" cy="540" r="1.5"/>
+    <circle cx="800" cy="580" r="2"/><circle cx="960" cy="550" r="1.5"/><circle cx="1100" cy="590" r="2"/>
+    <circle cx="1220" cy="560" r="1.5"/><circle cx="1360" cy="610" r="2"/>
+    <circle cx="250" cy="500" r="1.5"/><circle cx="500" cy="490" r="2"/><circle cx="750" cy="480" r="1.5"/>
+    <circle cx="1000" cy="500" r="2"/><circle cx="1250" cy="490" r="1.5"/>
+  </g>
+</svg>

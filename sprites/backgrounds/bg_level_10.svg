@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960">
+  <defs>
+    <linearGradient id="sky10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="25%" stop-color="#0d0000"/>
+      <stop offset="55%" stop-color="#220000"/>
+      <stop offset="80%" stop-color="#440000"/>
+      <stop offset="100%" stop-color="#660000"/>
+    </linearGradient>
+    <linearGradient id="ground10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0000"/>
+      <stop offset="100%" stop-color="#060000"/>
+    </linearGradient>
+    <radialGradient id="bloodmoon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#cc0000" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#880000" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#440000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eclipse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff2200" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#880000" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#440000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="explosion10" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff8800" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#cc2200" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#cc2200" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Absolute darkness sky -->
+  <rect width="1440" height="960" fill="url(#sky10)"/>
+
+  <!-- Blood red horizon flood -->
+  <ellipse cx="720" cy="820" rx="1100" ry="320" fill="#550000" opacity="0.6"/>
+  <ellipse cx="720" cy="840" rx="800" ry="200" fill="#880000" opacity="0.4"/>
+  <ellipse cx="720" cy="860" rx="600" ry="120" fill="#aa0000" opacity="0.3"/>
+
+  <!-- Eclipse (blood moon with black center) -->
+  <!-- Moon corona -->
+  <circle cx="720" cy="200" r="160" fill="none" stroke="#660000" stroke-width="40" opacity="0.4"/>
+  <circle cx="720" cy="200" r="200" fill="none" stroke="#440000" stroke-width="25" opacity="0.25"/>
+  <circle cx="720" cy="200" r="230" fill="none" stroke="#330000" stroke-width="15" opacity="0.15"/>
+  <!-- Blood moon glow -->
+  <circle cx="720" cy="200" r="140" fill="url(#bloodmoon)"/>
+  <circle cx="720" cy="200" r="100" fill="#aa0000" opacity="0.8"/>
+  <circle cx="720" cy="200" r="78" fill="#cc1100" opacity="0.8"/>
+  <!-- Eclipse black core -->
+  <circle cx="720" cy="200" r="58" fill="#000000"/>
+  <circle cx="720" cy="200" r="55" fill="#0a0000"/>
+  <!-- Eclipse corona rays -->
+  <g fill="#cc0000" opacity="0.5">
+    <polygon points="720,142 716,120 724,120"/>
+    <polygon points="720,258 716,280 724,280"/>
+    <polygon points="662,200 640,196 640,204"/>
+    <polygon points="778,200 800,196 800,204"/>
+    <polygon points="680,158 668,140 676,136"/>
+    <polygon points="760,242 772,260 764,264"/>
+    <polygon points="762,158 774,140 780,144"/>
+    <polygon points="678,242 666,260 672,264"/>
+  </g>
+
+  <!-- Red stars / death sky -->
+  <g fill="#ff3300" opacity="0.35">
+    <circle cx="45" cy="35" r="1.5"/><circle cx="120" cy="18" r="1.2"/><circle cx="215" cy="52" r="1.8"/>
+    <circle cx="310" cy="22" r="1.2"/><circle cx="410" cy="50" r="1.5"/><circle cx="1030" cy="48" r="1.5"/>
+    <circle cx="1130" cy="25" r="1.2"/><circle cx="1230" cy="55" r="1.8"/><circle cx="1340" cy="20" r="1.2"/>
+    <circle cx="1430" cy="45" r="1.5"/>
+  </g>
+  <g fill="#ff6600" opacity="0.2">
+    <circle cx="80" cy="80" r="1"/><circle cx="200" cy="100" r="1.3"/><circle cx="380" cy="85" r="1"/>
+    <circle cx="580" cy="95" r="1.3"/><circle cx="1100" cy="88" r="1.3"/><circle cx="1300" cy="95" r="1"/>
+  </g>
+
+  <!-- Apocalyptic clouds - heavy and oppressive -->
+  <g fill="#110000" opacity="0.9">
+    <ellipse cx="80" cy="340" rx="210" ry="105"/>
+    <ellipse cx="330" cy="305" rx="245" ry="112"/>
+    <ellipse cx="600" cy="328" rx="258" ry="106"/>
+    <ellipse cx="870" cy="300" rx="240" ry="108"/>
+    <ellipse cx="1120" cy="322" rx="255" ry="104"/>
+    <ellipse cx="1370" cy="342" rx="210" ry="100"/>
+    <ellipse cx="210" cy="425" rx="200" ry="88"/>
+    <ellipse cx="490" cy="408" rx="225" ry="92"/>
+    <ellipse cx="770" cy="418" rx="230" ry="88"/>
+    <ellipse cx="1050" cy="405" rx="220" ry="90"/>
+    <ellipse cx="1310" cy="420" rx="205" ry="86"/>
+  </g>
+  <!-- Cloud undersides lit red -->
+  <g opacity="0.25">
+    <ellipse cx="80" cy="375" rx="210" ry="60" fill="#990000"/>
+    <ellipse cx="330" cy="345" rx="245" ry="65" fill="#880000"/>
+    <ellipse cx="600" cy="368" rx="258" ry="62" fill="#990000"/>
+    <ellipse cx="870" cy="340" rx="240" ry="64" fill="#880000"/>
+    <ellipse cx="1120" cy="362" rx="255" ry="60" fill="#990000"/>
+    <ellipse cx="1370" cy="382" rx="210" ry="58" fill="#880000"/>
+  </g>
+
+  <!-- Meteors / asteroids raining down -->
+  <g>
+    <!-- Meteor 1 -->
+    <rect x="160" y="200" width="6" height="80" fill="#ff4400" opacity="0.7" transform="rotate(15, 160, 200)"/>
+    <circle cx="165" cy="285" r="8" fill="#dd2200" opacity="0.6"/>
+    <ellipse cx="165" cy="285" rx="14" ry="10" fill="url(#explosion10)" opacity="0.5"/>
+    <!-- Meteor 2 -->
+    <rect x="380" y="250" width="5" height="65" fill="#ff5500" opacity="0.7" transform="rotate(10, 380, 250)"/>
+    <circle cx="383" cy="318" r="7" fill="#cc2200" opacity="0.6"/>
+    <!-- Meteor 3 -->
+    <rect x="900" y="180" width="7" height="90" fill="#ff3300" opacity="0.7" transform="rotate(20, 900, 180)"/>
+    <circle cx="906" cy="272" r="10" fill="#ee2200" opacity="0.6"/>
+    <ellipse cx="906" cy="272" rx="18" ry="12" fill="url(#explosion10)" opacity="0.5"/>
+    <!-- Meteor 4 -->
+    <rect x="1200" y="220" width="5" height="70" fill="#ff4400" opacity="0.7" transform="rotate(12, 1200, 220)"/>
+    <circle cx="1204" cy="292" r="7" fill="#cc2200" opacity="0.6"/>
+    <!-- Meteor 5 (small) -->
+    <rect x="550" y="380" width="4" height="55" fill="#ff5500" opacity="0.6" transform="rotate(18, 550, 380)"/>
+    <circle cx="553" cy="436" r="5" fill="#cc2200" opacity="0.5"/>
+    <!-- Meteor 6 -->
+    <rect x="1050" y="290" width="6" height="75" fill="#ff3300" opacity="0.65" transform="rotate(14, 1050, 290)"/>
+    <circle cx="1054" cy="367" r="8" fill="#dd2200" opacity="0.55"/>
+  </g>
+
+  <!-- Ground - everything on fire -->
+  <rect y="755" width="1440" height="205" fill="url(#ground10)"/>
+
+  <!-- Burning ruins ground silhouettes -->
+  <g fill="#0d0000">
+    <rect x="0" y="580" width="55" height="180"/><rect x="50" y="540" width="45" height="220"/>
+    <rect x="92" y="560" width="50" height="200"/><rect x="138" y="520" width="40" height="240"/>
+    <rect x="175" y="555" width="55" height="205"/><rect x="228" y="500" width="48" height="260"/>
+    <rect x="272" y="530" width="52" height="230"/><rect x="322" y="545" width="42" height="215"/>
+    <rect x="360" y="510" width="62" height="250"/><rect x="420" y="540" width="45" height="220"/>
+    <rect x="462" y="560" width="55" height="200"/><rect x="515" y="505" width="50" height="255"/>
+    <rect x="562" y="525" width="58" height="235"/><rect x="618" y="545" width="44" height="215"/>
+    <rect x="659" y="515" width="65" height="245"/><rect x="722" y="540" width="48" height="220"/>
+    <rect x="768" y="558" width="55" height="202"/><rect x="821" y="508" width="52" height="252"/>
+    <rect x="870" y="530" width="60" height="230"/><rect x="928" y="548" width="45" height="212"/>
+    <rect x="971" y="518" width="65" height="242"/><rect x="1034" y="542" width="50" height="218"/>
+    <rect x="1082" y="562" width="55" height="198"/><rect x="1135" y="510" width="52" height="250"/>
+    <rect x="1185" y="532" width="58" height="228"/><rect x="1241" y="550" width="44" height="210"/>
+    <rect x="1283" y="520" width="62" height="240"/><rect x="1343" y="542" width="48" height="218"/>
+    <rect x="1389" y="558" width="51" height="202"/>
+  </g>
+
+  <!-- Massive fires everywhere -->
+  <g fill="#880000" opacity="0.9">
+    <polygon points="20,755 45,680 70,755"/>
+    <polygon points="48,755 65,700 82,755"/>
+    <polygon points="120,755 148,668 176,755"/>
+    <polygon points="148,755 168,695 188,755"/>
+    <polygon points="240,755 268,658 296,755"/>
+    <polygon points="268,755 288,692 308,755"/>
+    <polygon points="360,755 390,660 420,755"/>
+    <polygon points="388,755 410,695 432,755"/>
+    <polygon points="480,755 510,655 540,755"/>
+    <polygon points="508,755 530,692 552,755"/>
+    <polygon points="600,755 632,658 664,755"/>
+    <polygon points="628,755 650,694 672,755"/>
+    <polygon points="720,755 752,650 784,755"/>
+    <polygon points="748,755 772,688 796,755"/>
+    <polygon points="840,755 872,655 904,755"/>
+    <polygon points="868,755 892,692 916,755"/>
+    <polygon points="960,755 992,658 1024,755"/>
+    <polygon points="988,755 1012,694 1036,755"/>
+    <polygon points="1080,755 1112,650 1144,755"/>
+    <polygon points="1108,755 1132,688 1156,755"/>
+    <polygon points="1200,755 1232,655 1264,755"/>
+    <polygon points="1228,755 1252,692 1276,755"/>
+    <polygon points="1320,755 1352,658 1384,755"/>
+    <polygon points="1348,755 1372,694 1396,755"/>
+  </g>
+  <g fill="#cc2200" opacity="0.7">
+    <polygon points="30,755 48,698 66,755"/>
+    <polygon points="130,755 150,680 170,755"/>
+    <polygon points="250,755 270,672 290,755"/>
+    <polygon points="370,755 390,672 410,755"/>
+    <polygon points="490,755 512,668 534,755"/>
+    <polygon points="610,755 632,670 654,755"/>
+    <polygon points="730,755 752,662 774,755"/>
+    <polygon points="850,755 872,668 894,755"/>
+    <polygon points="970,755 992,670 1014,755"/>
+    <polygon points="1090,755 1112,660 1134,755"/>
+    <polygon points="1210,755 1232,668 1254,755"/>
+    <polygon points="1330,755 1352,670 1374,755"/>
+  </g>
+  <g fill="#ff5500" opacity="0.5">
+    <polygon points="35,755 48,708 61,755"/>
+    <polygon points="135,755 148,688 161,755"/>
+    <polygon points="255,755 268,680 281,755"/>
+    <polygon points="375,755 388,680 401,755"/>
+    <polygon points="495,755 508,675 521,755"/>
+    <polygon points="615,755 628,678 641,755"/>
+    <polygon points="735,755 748,670 761,755"/>
+    <polygon points="855,755 868,676 881,755"/>
+    <polygon points="975,755 988,678 1001,755"/>
+    <polygon points="1095,755 1108,668 1121,755"/>
+    <polygon points="1215,755 1228,676 1241,755"/>
+    <polygon points="1335,755 1348,678 1361,755"/>
+  </g>
+
+  <!-- Embers flying up -->
+  <g fill="#ff4400" opacity="0.55">
+    <circle cx="80" cy="640" r="2.5"/><circle cx="180" cy="610" r="2"/><circle cx="280" cy="645" r="2.5"/>
+    <circle cx="400" cy="605" r="2"/><circle cx="500" cy="635" r="2.5"/><circle cx="620" cy="608" r="2"/>
+    <circle cx="720" cy="630" r="2.5"/><circle cx="840" cy="612" r="2"/><circle cx="940" cy="642" r="2.5"/>
+    <circle cx="1060" cy="608" r="2"/><circle cx="1160" cy="638" r="2.5"/><circle cx="1280" cy="610" r="2"/>
+    <circle cx="1380" cy="635" r="2.5"/>
+    <circle cx="130" cy="555" r="2"/><circle cx="330" cy="540" r="2.5"/><circle cx="540" cy="555" r="2"/>
+    <circle cx="760" cy="545" r="2.5"/><circle cx="980" cy="558" r="2"/><circle cx="1200" cy="548" r="2.5"/>
+    <circle cx="1400" cy="555" r="2"/>
+  </g>
+</svg>

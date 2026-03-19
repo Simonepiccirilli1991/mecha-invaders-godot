@@ -4,9 +4,9 @@ extends CanvasLayer
 
 signal start_game_pressed
 
-@onready var title_label = $CenterContainer/VBoxContainer/TitleLabel
-@onready var subtitle_label = $CenterContainer/VBoxContainer/SubtitleLabel
-@onready var instruction_label = $CenterContainer/VBoxContainer/InstructionLabel
+@onready var title_label = $BottomPanel/VBoxContainer/TitleLabel
+@onready var subtitle_label = $BottomPanel/VBoxContainer/SubtitleLabel
+@onready var instruction_label = $BottomPanel/VBoxContainer/InstructionLabel
 
 func _ready() -> void:
 	# Animate instruction text (blink effect)

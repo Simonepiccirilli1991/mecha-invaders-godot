@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960">
+  <defs>
+    <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000510"/>
+      <stop offset="35%" stop-color="#020d20"/>
+      <stop offset="70%" stop-color="#041530"/>
+      <stop offset="100%" stop-color="#061a3a"/>
+    </linearGradient>
+    <linearGradient id="ice5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1e35"/>
+      <stop offset="50%" stop-color="#061428"/>
+      <stop offset="100%" stop-color="#030a18"/>
+    </linearGradient>
+    <linearGradient id="aurora1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#003322" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#006644" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#003322" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="aurora2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#002244" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0044aa" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#002244" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1440" height="960" fill="url(#sky5)"/>
+
+  <!-- Aurora borealis bands -->
+  <rect x="0" y="120" width="600" height="280" fill="url(#aurora1)" transform="skewX(-8)"/>
+  <rect x="200" y="80" width="700" height="260" fill="url(#aurora2)" transform="skewX(-5)"/>
+  <rect x="700" y="100" width="580" height="270" fill="url(#aurora1)" transform="skewX(6)"/>
+  <rect x="900" y="70" width="540" height="250" fill="url(#aurora2)" transform="skewX(10)"/>
+
+  <!-- Stars (bright, clear sky) -->
+  <g fill="#aabbdd" opacity="0.7">
+    <circle cx="45" cy="28" r="1.5"/><circle cx="112" cy="15" r="1.2"/><circle cx="198" cy="42" r="1.8"/>
+    <circle cx="275" cy="20" r="1"/><circle cx="350" cy="55" r="1.5"/><circle cx="428" cy="12" r="1.2"/>
+    <circle cx="510" cy="38" r="1.8"/><circle cx="595" cy="22" r="1"/><circle cx="672" cy="50" r="1.5"/>
+    <circle cx="758" cy="18" r="1.2"/><circle cx="840" cy="40" r="1.8"/><circle cx="925" cy="15" r="1"/>
+    <circle cx="1005" cy="48" r="1.5"/><circle cx="1085" cy="25" r="1.2"/><circle cx="1168" cy="55" r="1.8"/>
+    <circle cx="1248" cy="18" r="1"/><circle cx="1330" cy="42" r="1.5"/><circle cx="1410" cy="28" r="1.2"/>
+    <circle cx="80" cy="78" r="1"/><circle cx="220" cy="90" r="1.5"/><circle cx="400" cy="72" r="1.2"/>
+    <circle cx="580" cy="85" r="1"/><circle cx="760" cy="75" r="1.5"/><circle cx="940" cy="88" r="1.2"/>
+    <circle cx="1120" cy="78" r="1"/><circle cx="1300" cy="90" r="1.5"/>
+  </g>
+
+  <!-- Big cold moon -->
+  <circle cx="280" cy="120" r="70" fill="#0c1e38"/>
+  <circle cx="280" cy="120" r="65" fill="#102240"/>
+  <circle cx="280" cy="120" r="60" fill="#162b4d"/>
+  <!-- Moon craters -->
+  <circle cx="262" cy="108" r="12" fill="#102240" opacity="0.6"/>
+  <circle cx="295" cy="132" r="8" fill="#102240" opacity="0.5"/>
+  <circle cx="275" cy="138" r="5" fill="#102240" opacity="0.4"/>
+  <!-- Moon glow -->
+  <circle cx="280" cy="120" r="90" fill="none" stroke="#1a3055" stroke-width="20" opacity="0.2"/>
+
+  <!-- Ice crystal spires -->
+  <g fill="#06101e">
+    <!-- Frozen mountains/spires -->
+    <polygon points="0,780 60,580 120,780"/>
+    <polygon points="80,780 145,545 210,780"/>
+    <polygon points="175,780 250,560 325,780"/>
+    <polygon points="290,780 375,520 460,780"/>
+    <polygon points="420,780 510,550 600,780"/>
+    <polygon points="555,780 645,530 735,780"/>
+    <polygon points="690,780 785,505 880,780"/>
+    <polygon points="825,780 915,535 1005,780"/>
+    <polygon points="960,780 1055,520 1150,780"/>
+    <polygon points="1090,780 1185,548 1280,780"/>
+    <polygon points="1225,780 1315,558 1405,780"/>
+    <polygon points="1355,780 1440,540 1440,780"/>
+  </g>
+  <!-- Ice highlight on spires -->
+  <g fill="#0d1e32" opacity="0.6">
+    <polygon points="60,580 68,600 60,580"/>
+    <polygon points="145,545 152,568 145,545"/>
+    <polygon points="250,560 258,582 250,560"/>
+    <polygon points="375,520 383,544 375,520"/>
+    <polygon points="510,550 518,573 510,550"/>
+    <polygon points="645,530 653,554 645,530"/>
+    <polygon points="785,505 793,530 785,505"/>
+    <polygon points="915,535 923,558 915,535"/>
+    <polygon points="1055,520 1063,544 1055,520"/>
+    <polygon points="1185,548 1193,570 1185,548"/>
+    <polygon points="1315,558 1323,580 1315,558"/>
+  </g>
+
+  <!-- Ground - snow/ice -->
+  <rect y="775" width="1440" height="185" fill="url(#ice5)"/>
+
+  <!-- Snow drifts on ground -->
+  <g fill="#081428" opacity="0.8">
+    <ellipse cx="160" cy="778" rx="200" ry="25"/>
+    <ellipse cx="480" cy="782" rx="240" ry="28"/>
+    <ellipse cx="820" cy="776" rx="220" ry="24"/>
+    <ellipse cx="1160" cy="780" rx="230" ry="26"/>
+    <ellipse cx="1400" cy="778" rx="180" ry="22"/>
+  </g>
+
+  <!-- Frozen city structures (under ice) -->
+  <g fill="#050e1c" opacity="0.7">
+    <rect x="150" y="680" width="35" height="100"/>
+    <rect x="145" y="680" width="45" height="10"/>
+    <rect x="340" y="695" width="30" height="85"/>
+    <rect x="500" y="672" width="40" height="108"/>
+    <rect x="495" y="672" width="50" height="10"/>
+    <rect x="680" y="688" width="32" height="92"/>
+    <rect x="850" y="675" width="42" height="105"/>
+    <rect x="845" y="675" width="52" height="10"/>
+    <rect x="1020" y="692" width="30" height="88"/>
+    <rect x="1180" y="678" width="38" height="102"/>
+    <rect x="1175" y="678" width="48" height="10"/>
+    <rect x="1360" y="685" width="35" height="95"/>
+  </g>
+
+  <!-- Ice sheen on ground -->
+  <ellipse cx="720" cy="820" rx="850" ry="60" fill="#0d2040" opacity="0.3"/>
+  <ellipse cx="720" cy="850" rx="900" ry="40" fill="#091830" opacity="0.2"/>
+
+  <!-- Snow particles -->
+  <g fill="#7a9abb" opacity="0.35">
+    <circle cx="100" cy="350" r="2"/><circle cx="200" cy="390" r="1.5"/><circle cx="320" cy="360" r="2"/>
+    <circle cx="450" cy="395" r="1.5"/><circle cx="570" cy="368" r="2"/><circle cx="700" cy="400" r="1.5"/>
+    <circle cx="820" cy="372" r="2"/><circle cx="950" cy="388" r="1.5"/><circle cx="1080" cy="364" r="2"/>
+    <circle cx="1210" cy="392" r="1.5"/><circle cx="1330" cy="376" r="2"/>
+    <circle cx="150" cy="480" r="1.5"/><circle cx="300" cy="500" r="2"/><circle cx="500" cy="485" r="1.5"/>
+    <circle cx="700" cy="495" r="2"/><circle cx="900" cy="482" r="1.5"/><circle cx="1100" cy="498" r="2"/>
+    <circle cx="1300" cy="488" r="1.5"/><circle cx="60" cy="560" r="2"/><circle cx="250" cy="575" r="1.5"/>
+    <circle cx="460" cy="555" r="2"/><circle cx="680" cy="568" r="1.5"/><circle cx="920" cy="555" r="2"/>
+    <circle cx="1150" cy="572" r="1.5"/><circle cx="1380" cy="558" r="2"/>
+  </g>
+</svg>

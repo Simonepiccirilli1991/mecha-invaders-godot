@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <!-- Sand Pharaoh - Ancient Desert Guardian Boss -->
+  <!-- Outer divine aura -->
+  <ellipse cx="48" cy="50" rx="42" ry="40" fill="#1a0800" opacity="0.3"/>
+  <!-- Staff/scepter -->
+  <rect x="78" y="10" width="5" height="70" rx="2" fill="#7a5500"/>
+  <rect x="79" y="11" width="3" height="68" rx="1" fill="#aa7700"/>
+  <ellipse cx="80" cy="10" rx="8" ry="10" fill="#664400"/>
+  <circle cx="80" cy="8" r="7" fill="#aa8800"/>
+  <circle cx="80" cy="8" r="5" fill="#cc9900"/>
+  <circle cx="80" cy="8" r="3" fill="#ffcc00"/>
+  <!-- Ankh on staff -->
+  <circle cx="80" cy="38" r="5" fill="none" stroke="#cc9900" stroke-width="2"/>
+  <line x1="80" y1="43" x2="80" y2="56" stroke="#cc9900" stroke-width="2"/>
+  <line x1="74" y1="48" x2="86" y2="48" stroke="#cc9900" stroke-width="2"/>
+  <!-- Wings (divine wings) -->
+  <path d="M 48 44 Q 22 32 10 20 Q 18 36 16 52 Q 26 48 48 52" fill="#4a3500" opacity="0.85"/>
+  <path d="M 48 44 Q 22 34 12 24 Q 20 38 18 50" fill="#664800" opacity="0.5"/>
+  <!-- Right wing (partial, staff blocks) -->
+  <path d="M 48 44 Q 62 34 70 22 Q 66 36 68 50 Q 60 48 48 52" fill="#4a3500" opacity="0.85"/>
+  <path d="M 48 44 Q 62 36 68 26 Q 64 38 66 50" fill="#664800" opacity="0.5"/>
+  <!-- Wing feather lines -->
+  <g stroke="#7a6000" stroke-width="1" opacity="0.6">
+    <line x1="48" y1="44" x2="20" y2="26"/><line x1="48" y1="44" x2="14" y2="30"/>
+    <line x1="48" y1="44" x2="12" y2="36"/><line x1="48" y1="44" x2="16" y2="46"/>
+    <line x1="48" y1="44" x2="66" y2="28"/><line x1="48" y1="44" x2="68" y2="34"/>
+    <line x1="48" y1="44" x2="66" y2="44"/>
+  </g>
+  <!-- Body - pharaoh robes -->
+  <polygon points="28,52 48,44 68,52 64,82 48,88 32,82" fill="#2a1800"/>
+  <polygon points="30,54 48,46 66,54 62,80 48,86 34,80" fill="#3a2200"/>
+  <!-- Golden belt -->
+  <rect x="32" y="66" width="32" height="6" rx="2" fill="#664400"/>
+  <rect x="32" y="66" width="32" height="6" rx="2" fill="none" stroke="#cc9900" stroke-width="1"/>
+  <!-- Collar/necklace -->
+  <ellipse cx="48" cy="54" rx="16" ry="6" fill="#4a3200"/>
+  <ellipse cx="48" cy="54" rx="16" ry="6" fill="none" stroke="#cc9900" stroke-width="1.5"/>
+  <!-- Collar gems -->
+  <circle cx="36" cy="54" r="2" fill="#ff4400" opacity="0.8"/>
+  <circle cx="42" cy="52" r="2" fill="#0044ff" opacity="0.8"/>
+  <circle cx="48" cy="52" r="2" fill="#00cc44" opacity="0.8"/>
+  <circle cx="54" cy="52" r="2" fill="#0044ff" opacity="0.8"/>
+  <circle cx="60" cy="54" r="2" fill="#ff4400" opacity="0.8"/>
+  <!-- Pharaoh head - falcon/human -->
+  <ellipse cx="48" cy="30" rx="14" ry="16" fill="#2a1800"/>
+  <!-- Nemes headdress -->
+  <path d="M 34 24 Q 34 10 48 8 Q 62 10 62 24 L 58 44 Q 48 48 38 44 Z" fill="#cc9900"/>
+  <path d="M 34 24 Q 36 14 48 12 Q 60 14 62 24 L 58 44 Q 48 46 38 44 Z" fill="#aa7700"/>
+  <!-- Nemes stripes -->
+  <g stroke="#664400" stroke-width="1.5" opacity="0.6">
+    <line x1="38" y1="26" x2="40" y2="42"/>
+    <line x1="42" y1="24" x2="43" y2="44"/>
+    <line x1="54" y1="24" x2="53" y2="44"/>
+    <line x1="58" y1="26" x2="56" y2="42"/>
+  </g>
+  <!-- Nemes side lappets -->
+  <path d="M 34 24 Q 28 32 30 44" fill="none" stroke="#cc9900" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 62 24 Q 68 32 66 44" fill="none" stroke="#cc9900" stroke-width="3" stroke-linecap="round"/>
+  <!-- Uraeus cobra on crown -->
+  <path d="M 44 8 Q 40 4 44 2 Q 48 0 52 2 Q 56 4 52 8" fill="#00aa44"/>
+  <circle cx="48" cy="2" r="3" fill="#00cc55"/>
+  <!-- Face - falcon/human hybrid -->
+  <ellipse cx="48" cy="32" rx="10" ry="10" fill="#2a1800"/>
+  <!-- Eyes (kohl lined) -->
+  <ellipse cx="42" cy="30" rx="5" ry="4" fill="#0a0500"/>
+  <ellipse cx="54" cy="30" rx="5" ry="4" fill="#0a0500"/>
+  <ellipse cx="42" cy="30" rx="3.5" ry="2.5" fill="#ffcc00"/>
+  <ellipse cx="54" cy="30" rx="3.5" ry="2.5" fill="#ffcc00"/>
+  <ellipse cx="42" cy="30" rx="2" ry="1.5" fill="#000000"/>
+  <ellipse cx="54" cy="30" rx="2" ry="1.5" fill="#000000"/>
+  <!-- Eye kohl lines -->
+  <line x1="36" y1="30" x2="41" y2="30" stroke="#000000" stroke-width="1.5"/>
+  <line x1="55" y1="30" x2="60" y2="30" stroke="#000000" stroke-width="1.5"/>
+  <!-- Falcon beak -->
+  <polygon points="44,36 52,36 48,42" fill="#cc7700"/>
+  <!-- Legs -->
+  <rect x="34" y="80" width="12" height="14" rx="2" fill="#2a1800"/>
+  <rect x="50" y="80" width="12" height="14" rx="2" fill="#2a1800"/>
+  <!-- Sandal straps -->
+  <line x1="34" y1="88" x2="46" y2="88" stroke="#cc9900" stroke-width="1.5"/>
+  <line x1="50" y1="88" x2="62" y2="88" stroke="#cc9900" stroke-width="1.5"/>
+</svg>

@@ -52,6 +52,34 @@ theme_override_colors/font_color = Color(1, 0.6, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "WEAPON: —"
 
+[node name="BossHealthContainer" type="VBoxContainer" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.0
+anchor_bottom = 0.0
+offset_left = -220.0
+offset_right = 220.0
+offset_top = 18.0
+offset_bottom = 72.0
+grow_horizontal = 2
+theme_override_constants/separation = 4
+
+[node name="BossNameLabel" type="Label" parent="BossHealthContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.2, 0.2, 1)
+theme_override_font_sizes/font_size = 22
+text = "BOSS"
+horizontal_alignment = 1
+
+[node name="BossHealthBar" type="ProgressBar" parent="BossHealthContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+min_value = 0.0
+max_value = 100.0
+value = 100.0
+show_percentage = false
+
 [node name="GameOverPanel" type="Panel" parent="."]
 visible = false
 anchors_preset = 8

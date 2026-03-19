@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960">
+  <defs>
+    <linearGradient id="sky9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#010408"/>
+      <stop offset="35%" stop-color="#020810"/>
+      <stop offset="65%" stop-color="#040d18"/>
+      <stop offset="100%" stop-color="#061220"/>
+    </linearGradient>
+    <linearGradient id="ground9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1020"/>
+      <stop offset="100%" stop-color="#040810"/>
+    </linearGradient>
+    <radialGradient id="arcglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00aaff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00aaff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fireglow9" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4400" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff4400" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1440" height="960" fill="url(#sky9)"/>
+
+  <!-- Smog/industrial haze -->
+  <g fill="#030810" opacity="0.8">
+    <ellipse cx="100" cy="180" rx="215" ry="100"/>
+    <ellipse cx="360" cy="150" rx="240" ry="108"/>
+    <ellipse cx="630" cy="172" rx="255" ry="102"/>
+    <ellipse cx="890" cy="145" rx="232" ry="105"/>
+    <ellipse cx="1140" cy="168" rx="248" ry="98"/>
+    <ellipse cx="1370" cy="185" rx="200" ry="94"/>
+    <ellipse cx="250" cy="268" rx="192" ry="82"/>
+    <ellipse cx="760" cy="255" rx="218" ry="85"/>
+    <ellipse cx="1255" cy="270" rx="202" ry="80"/>
+  </g>
+
+  <!-- Dim stars (mostly hidden by smog) -->
+  <g fill="#aaccee" opacity="0.2">
+    <circle cx="55" cy="32" r="1.2"/><circle cx="175" cy="18" r="1"/><circle cx="310" cy="50" r="1.4"/>
+    <circle cx="470" cy="20" r="1"/><circle cx="630" cy="45" r="1.2"/><circle cx="800" cy="28" r="1"/>
+    <circle cx="970" cy="52" r="1.4"/><circle cx="1130" cy="22" r="1"/><circle cx="1300" cy="48" r="1.2"/>
+    <circle cx="1430" cy="15" r="1"/>
+  </g>
+
+  <!-- Massive mechanical ruins - background -->
+  <g fill="#040a18">
+    <!-- Giant robot legs/frames -->
+    <rect x="0" y="380" width="40" height="380"/>
+    <rect x="35" y="380" width="80" height="28"/>
+    <rect x="35" y="440" width="80" height="22"/>
+    <rect x="35" y="500" width="80" height="20"/>
+
+    <rect x="180" y="360" width="35" height="400"/>
+    <rect x="175" y="360" width="90" height="28"/>
+    <rect x="175" y="420" width="90" height="22"/>
+
+    <rect x="380" y="370" width="45" height="390"/>
+    <rect x="375" y="370" width="100" height="30"/>
+    <rect x="375" y="432" width="100" height="24"/>
+    <rect x="375" y="494" width="100" height="20"/>
+    <!-- Horizontal girder -->
+    <rect x="360" y="400" width="120" height="12"/>
+
+    <rect x="580" y="350" width="40" height="410"/>
+    <rect x="575" y="350" width="95" height="28"/>
+    <rect x="575" y="412" width="95" height="22"/>
+
+    <rect x="780" y="365" width="45" height="395"/>
+    <rect x="775" y="365" width="105" height="30"/>
+    <rect x="775" y="428" width="105" height="24"/>
+    <rect x="775" y="490" width="105" height="20"/>
+
+    <rect x="980" y="355" width="38" height="405"/>
+    <rect x="975" y="355" width="92" height="28"/>
+    <rect x="975" y="415" width="92" height="22"/>
+
+    <rect x="1160" y="370" width="44" height="390"/>
+    <rect x="1155" y="370" width="100" height="30"/>
+    <rect x="1155" y="432" width="100" height="24"/>
+
+    <rect x="1350" y="358" width="40" height="402"/>
+    <rect x="1345" y="358" width="95" height="28"/>
+    <rect x="1345" y="418" width="95" height="22"/>
+    <rect x="1400" y="358" width="40" height="402"/>
+  </g>
+
+  <!-- Mechanical debris/rubble -->
+  <g fill="#060c1a">
+    <!-- Fallen machine parts -->
+    <rect x="120" y="710" width="180" height="25" transform="rotate(-8, 120, 710)"/>
+    <rect x="350" y="720" width="140" height="20" transform="rotate(5, 350, 720)"/>
+    <rect x="600" y="715" width="200" height="22" transform="rotate(-12, 600, 715)"/>
+    <rect x="880" y="708" width="160" height="24" transform="rotate(7, 880, 708)"/>
+    <rect x="1100" y="718" width="175" height="21" transform="rotate(-6, 1100, 718)"/>
+    <rect x="1320" y="712" width="120" height="23" transform="rotate(10, 1320, 712)"/>
+    <!-- Gear shapes (approximated) -->
+    <circle cx="220" cy="680" r="30" fill="#060c1a"/>
+    <circle cx="220" cy="680" r="18" fill="#040810"/>
+    <circle cx="680" cy="690" r="35" fill="#060c1a"/>
+    <circle cx="680" cy="690" r="22" fill="#040810"/>
+    <circle cx="1180" cy="685" r="28" fill="#060c1a"/>
+    <circle cx="1180" cy="685" r="16" fill="#040810"/>
+  </g>
+
+  <!-- Ground -->
+  <rect y="755" width="1440" height="205" fill="url(#ground9)"/>
+
+  <!-- Electric arc lines -->
+  <g opacity="0.7">
+    <!-- Arc 1 -->
+    <polyline points="85,420 72,460 88,460 70,510" fill="none" stroke="#00bbff" stroke-width="2"/>
+    <polyline points="85,420 98,460 84,460 102,510" fill="none" stroke="#00bbff" stroke-width="1.5"/>
+    <circle cx="85" cy="418" r="5" fill="#00bbff" opacity="0.6"/>
+    <circle cx="70" cy="510" r="4" fill="#00bbff" opacity="0.4"/>
+
+    <!-- Arc 2 -->
+    <polyline points="420,390 408,432 422,432 404,485" fill="none" stroke="#00ccff" stroke-width="2"/>
+    <polyline points="420,390 432,432 418,432 436,485" fill="none" stroke="#00ccff" stroke-width="1.5"/>
+    <circle cx="420" cy="388" r="5" fill="#00ccff" opacity="0.6"/>
+    <circle cx="404" cy="485" r="4" fill="#00ccff" opacity="0.4"/>
+
+    <!-- Arc 3 -->
+    <polyline points="760,400 748,445 762,445 744,498" fill="none" stroke="#00aaff" stroke-width="2.5"/>
+    <polyline points="760,400 772,445 758,445 776,498" fill="none" stroke="#00aaff" stroke-width="2"/>
+    <circle cx="760" cy="398" r="6" fill="#00aaff" opacity="0.7"/>
+    <circle cx="744" cy="498" r="5" fill="#00aaff" opacity="0.5"/>
+
+    <!-- Arc 4 -->
+    <polyline points="1080,385 1068,428 1082,428 1064,482" fill="none" stroke="#22ddff" stroke-width="2"/>
+    <polyline points="1080,385 1092,428 1078,428 1096,482" fill="none" stroke="#22ddff" stroke-width="1.5"/>
+    <circle cx="1080" cy="383" r="5" fill="#22ddff" opacity="0.6"/>
+
+    <!-- Arc 5 between structures -->
+    <polyline points="220,400 340,380 360,400" fill="none" stroke="#0099cc" stroke-width="1.5" opacity="0.6"/>
+    <polyline points="620,410 740,388 760,410" fill="none" stroke="#0099cc" stroke-width="1.5" opacity="0.6"/>
+    <polyline points="1000,395 1140,372 1160,395" fill="none" stroke="#0099cc" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Arc glow spots -->
+  <g opacity="0.3">
+    <circle cx="85" cy="468" r="18" fill="url(#arcglow)"/>
+    <circle cx="420" cy="452" r="16" fill="url(#arcglow)"/>
+    <circle cx="760" cy="448" r="22" fill="url(#arcglow)"/>
+    <circle cx="1080" cy="435" r="18" fill="url(#arcglow)"/>
+  </g>
+
+  <!-- Burning machine fires -->
+  <g opacity="0.5">
+    <ellipse cx="160" cy="760" rx="50" ry="20" fill="url(#fireglow9)"/>
+    <ellipse cx="500" cy="755" rx="60" ry="22" fill="url(#fireglow9)"/>
+    <ellipse cx="880" cy="758" rx="55" ry="20" fill="url(#fireglow9)"/>
+    <ellipse cx="1250" cy="752" rx="50" ry="18" fill="url(#fireglow9)"/>
+  </g>
+  <g fill="#cc3300" opacity="0.5">
+    <polygon points="145,760 160,720 175,760"/>
+    <polygon points="155,760 165,730 175,760"/>
+    <polygon points="485,760 500,715 515,760"/>
+    <polygon points="495,760 505,728 515,760"/>
+    <polygon points="865,760 880,718 895,760"/>
+    <polygon points="875,760 885,728 895,760"/>
+    <polygon points="1235,760 1250,720 1265,760"/>
+    <polygon points="1245,760 1255,732 1265,760"/>
+  </g>
+
+  <!-- Smoke from machines -->
+  <g fill="#020810" opacity="0.5">
+    <ellipse cx="85" cy="350" rx="40" ry="30"/>
+    <ellipse cx="200" cy="320" rx="45" ry="32"/>
+    <ellipse cx="395" cy="340" rx="42" ry="31"/>
+    <ellipse cx="595" cy="325" rx="44" ry="30"/>
+    <ellipse cx="795" cy="335" rx="46" ry="33"/>
+    <ellipse cx="995" cy="328" rx="43" ry="30"/>
+    <ellipse cx="1175" cy="340" rx="45" ry="31"/>
+    <ellipse cx="1365" cy="330" rx="40" ry="29"/>
+  </g>
+</svg>

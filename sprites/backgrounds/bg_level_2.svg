@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#030503"/>
+      <stop offset="40%" stop-color="#0d1a08"/>
+      <stop offset="75%" stop-color="#1a2e0a"/>
+      <stop offset="100%" stop-color="#2d4a10"/>
+    </linearGradient>
+    <linearGradient id="ground2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1205"/>
+      <stop offset="100%" stop-color="#050800"/>
+    </linearGradient>
+    <radialGradient id="crater1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#33ff00" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#22aa00" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22aa00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crater2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#44ff00" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#22aa00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1440" height="960" fill="url(#sky2)"/>
+
+  <!-- Toxic green horizon glow -->
+  <ellipse cx="720" cy="750" rx="850" ry="200" fill="#2a5500" opacity="0.5"/>
+  <ellipse cx="720" cy="800" rx="600" ry="120" fill="#44aa00" opacity="0.2"/>
+
+  <!-- Ash clouds -->
+  <g fill="#0d1408" opacity="0.75">
+    <ellipse cx="120" cy="200" rx="200" ry="80"/>
+    <ellipse cx="380" cy="160" rx="220" ry="85"/>
+    <ellipse cx="640" cy="190" rx="240" ry="90"/>
+    <ellipse cx="900" cy="155" rx="210" ry="80"/>
+    <ellipse cx="1150" cy="175" rx="230" ry="88"/>
+    <ellipse cx="1370" cy="200" rx="180" ry="78"/>
+    <ellipse cx="260" cy="280" rx="170" ry="65"/>
+    <ellipse cx="780" cy="250" rx="200" ry="75"/>
+    <ellipse cx="1260" cy="275" rx="185" ry="70"/>
+  </g>
+
+  <!-- Dim toxic stars -->
+  <g fill="#aaff88" opacity="0.2">
+    <circle cx="70" cy="50" r="1.2"/><circle cx="190" cy="35" r="1"/><circle cx="330" cy="65" r="1.4"/>
+    <circle cx="480" cy="22" r="1"/><circle cx="620" cy="48" r="1.2"/><circle cx="760" cy="33" r="1"/>
+    <circle cx="900" cy="55" r="1.4"/><circle cx="1040" cy="28" r="1"/><circle cx="1180" cy="45" r="1.2"/>
+    <circle cx="1340" cy="18" r="1"/><circle cx="140" cy="95" r="1"/><circle cx="410" cy="115" r="1.2"/>
+    <circle cx="690" cy="85" r="1"/><circle cx="980" cy="105" r="1.4"/><circle cx="1260" cy="78" r="1"/>
+  </g>
+
+  <!-- Ground -->
+  <rect y="770" width="1440" height="190" fill="url(#ground2)"/>
+
+  <!-- Terrain bumps -->
+  <ellipse cx="200" cy="775" rx="220" ry="30" fill="#0a1004"/>
+  <ellipse cx="600" cy="778" rx="280" ry="28" fill="#0a1004"/>
+  <ellipse cx="1000" cy="772" rx="250" ry="32" fill="#0a1004"/>
+  <ellipse cx="1350" cy="777" rx="200" ry="28" fill="#0a1004"/>
+
+  <!-- Dead trees -->
+  <g fill="#080d04" stroke="#0d1508" stroke-width="1">
+    <!-- Tree 1 -->
+    <rect x="98" y="640" width="8" height="135"/>
+    <line x1="102" y1="690" x2="70" y2="660" stroke="#080d04" stroke-width="5"/>
+    <line x1="102" y1="700" x2="130" y2="672" stroke="#080d04" stroke-width="4"/>
+    <line x1="102" y1="678" x2="82" y2="648" stroke="#080d04" stroke-width="3"/>
+    <!-- Tree 2 -->
+    <rect x="248" y="655" width="7" height="120"/>
+    <line x1="252" y1="700" x2="225" y2="675" stroke="#080d04" stroke-width="4"/>
+    <line x1="252" y1="710" x2="278" y2="685" stroke="#080d04" stroke-width="4"/>
+    <!-- Tree 3 -->
+    <rect x="480" y="635" width="9" height="140"/>
+    <line x1="485" y1="685" x2="455" y2="658" stroke="#080d04" stroke-width="5"/>
+    <line x1="485" y1="695" x2="515" y2="668" stroke="#080d04" stroke-width="4"/>
+    <line x1="485" y1="672" x2="462" y2="645" stroke="#080d04" stroke-width="3"/>
+    <!-- Tree 4 -->
+    <rect x="680" y="648" width="7" height="127"/>
+    <line x1="684" y1="695" x2="658" y2="670" stroke="#080d04" stroke-width="4"/>
+    <line x1="684" y1="705" x2="708" y2="680" stroke="#080d04" stroke-width="3"/>
+    <!-- Tree 5 -->
+    <rect x="880" y="638" width="9" height="137"/>
+    <line x1="885" y1="688" x2="855" y2="661" stroke="#080d04" stroke-width="5"/>
+    <line x1="885" y1="698" x2="915" y2="671" stroke="#080d04" stroke-width="4"/>
+    <line x1="885" y1="675" x2="862" y2="648" stroke="#080d04" stroke-width="3"/>
+    <!-- Tree 6 -->
+    <rect x="1080" y="650" width="7" height="125"/>
+    <line x1="1084" y1="697" x2="1058" y2="672" stroke="#080d04" stroke-width="4"/>
+    <line x1="1084" y1="707" x2="1110" y2="682" stroke="#080d04" stroke-width="3"/>
+    <!-- Tree 7 -->
+    <rect x="1280" y="643" width="8" height="132"/>
+    <line x1="1284" y1="692" x2="1256" y2="665" stroke="#080d04" stroke-width="4"/>
+    <line x1="1284" y1="702" x2="1312" y2="675" stroke="#080d04" stroke-width="4"/>
+    <line x1="1284" y1="678" x2="1262" y2="652" stroke="#080d04" stroke-width="3"/>
+  </g>
+
+  <!-- Radioactive craters -->
+  <g>
+    <ellipse cx="180" cy="800" rx="80" ry="30" fill="url(#crater1)"/>
+    <ellipse cx="180" cy="800" rx="40" ry="15" fill="#33ff00" opacity="0.3"/>
+    <ellipse cx="550" cy="810" rx="100" ry="35" fill="url(#crater2)"/>
+    <ellipse cx="550" cy="810" rx="50" ry="17" fill="#44ff00" opacity="0.25"/>
+    <ellipse cx="950" cy="795" rx="90" ry="32" fill="url(#crater1)"/>
+    <ellipse cx="950" cy="795" rx="45" ry="16" fill="#33ff00" opacity="0.28"/>
+    <ellipse cx="1300" cy="808" rx="85" ry="30" fill="url(#crater2)"/>
+    <ellipse cx="1300" cy="808" rx="42" ry="15" fill="#44ff00" opacity="0.22"/>
+  </g>
+
+  <!-- Toxic mist at ground -->
+  <ellipse cx="720" cy="810" rx="800" ry="120" fill="#1a4400" opacity="0.35"/>
+  <ellipse cx="720" cy="850" rx="900" ry="80" fill="#22550a" opacity="0.25"/>
+
+  <!-- Toxic drizzle particles -->
+  <g fill="#44bb00" opacity="0.3">
+    <circle cx="100" cy="400" r="1.5"/><circle cx="200" cy="450" r="1"/><circle cx="320" cy="380" r="1.5"/>
+    <circle cx="440" cy="420" r="1"/><circle cx="580" cy="395" r="1.5"/><circle cx="700" cy="440" r="1"/>
+    <circle cx="820" cy="400" r="1.5"/><circle cx="950" cy="430" r="1"/><circle cx="1080" cy="385" r="1.5"/>
+    <circle cx="1200" cy="415" r="1"/><circle cx="1330" cy="395" r="1.5"/>
+    <circle cx="160" cy="540" r="1"/><circle cx="380" cy="520" r="1.5"/><circle cx="620" cy="555" r="1"/>
+    <circle cx="860" cy="530" r="1.5"/><circle cx="1100" cy="545" r="1"/><circle cx="1340" cy="520" r="1.5"/>
+  </g>
+
+  <!-- Radioactive skull silhouette in sky (subtle) -->
+  <circle cx="720" cy="180" r="55" fill="none" stroke="#1a3300" stroke-width="3" opacity="0.3"/>
+  <circle cx="700" cy="165" r="12" fill="#1a3300" opacity="0.3"/>
+  <circle cx="740" cy="165" r="12" fill="#1a3300" opacity="0.3"/>
+  <rect x="704" y="195" width="32" height="16" rx="4" fill="#1a3300" opacity="0.3"/>
+</svg>

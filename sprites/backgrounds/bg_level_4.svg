@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960">
+  <defs>
+    <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080000"/>
+      <stop offset="30%" stop-color="#1a0200"/>
+      <stop offset="65%" stop-color="#660800"/>
+      <stop offset="100%" stop-color="#aa1500"/>
+    </linearGradient>
+    <linearGradient id="lava4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cc2200"/>
+      <stop offset="40%" stop-color="#882200"/>
+      <stop offset="100%" stop-color="#3d0800"/>
+    </linearGradient>
+    <radialGradient id="lavaglow4" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#ff4400" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff4400" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="volcanoglow" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ff2200" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1440" height="960" fill="url(#sky4)"/>
+
+  <!-- Horizon lava glow -->
+  <ellipse cx="720" cy="780" rx="1000" ry="280" fill="#cc1100" opacity="0.5"/>
+  <ellipse cx="720" cy="820" rx="700" ry="160" fill="#ff3300" opacity="0.3"/>
+
+  <!-- Ash clouds -->
+  <g fill="#180400" opacity="0.85">
+    <ellipse cx="80" cy="180" rx="200" ry="95"/>
+    <ellipse cx="330" cy="140" rx="240" ry="105"/>
+    <ellipse cx="600" cy="165" rx="255" ry="98"/>
+    <ellipse cx="860" cy="135" rx="235" ry="102"/>
+    <ellipse cx="1110" cy="158" rx="250" ry="96"/>
+    <ellipse cx="1360" cy="178" rx="195" ry="90"/>
+    <ellipse cx="220" cy="260" rx="185" ry="78"/>
+    <ellipse cx="740" cy="245" rx="210" ry="82"/>
+    <ellipse cx="1240" cy="258" rx="195" ry="77"/>
+  </g>
+
+  <!-- Volcano silhouettes - background layer -->
+  <g fill="#0d0000">
+    <!-- Far volcanoes -->
+    <polygon points="0,750 120,420 240,750"/>
+    <polygon points="180,750 320,380 460,750"/>
+    <polygon points="400,750 560,450 720,750"/>
+    <polygon points="650,750 800,395 950,750"/>
+    <polygon points="880,750 1040,410 1200,750"/>
+    <polygon points="1130,750 1280,385 1430,750"/>
+    <polygon points="1300,750 1440,440 1440,750"/>
+  </g>
+
+  <!-- Eruption glows behind volcanoes -->
+  <g opacity="0.6">
+    <ellipse cx="120" cy="420" rx="80" ry="60" fill="#ff4400"/>
+    <ellipse cx="320" cy="380" rx="90" ry="70" fill="#ff5500"/>
+    <ellipse cx="560" cy="450" rx="85" ry="65" fill="#ff3300"/>
+    <ellipse cx="800" cy="395" rx="95" ry="72" fill="#ff4400"/>
+    <ellipse cx="1040" cy="410" rx="88" ry="68" fill="#ff5500"/>
+    <ellipse cx="1280" cy="385" rx="92" ry="70" fill="#ff3300"/>
+  </g>
+
+  <!-- Volcano eruption plumes -->
+  <g fill="#330800" opacity="0.7">
+    <ellipse cx="120" cy="380" rx="55" ry="40"/>
+    <ellipse cx="105" cy="350" rx="40" ry="35"/>
+    <ellipse cx="135" cy="340" rx="45" ry="38"/>
+    <ellipse cx="115" cy="310" rx="38" ry="32"/>
+    <ellipse cx="320" cy="340" rx="60" ry="45"/>
+    <ellipse cx="305" cy="305" rx="45" ry="38"/>
+    <ellipse cx="335" cy="295" rx="50" ry="40"/>
+    <ellipse cx="560" cy="410" rx="58" ry="42"/>
+    <ellipse cx="548" cy="378" rx="42" ry="36"/>
+    <ellipse cx="572" cy="368" rx="46" ry="38"/>
+    <ellipse cx="800" cy="355" rx="62" ry="46"/>
+    <ellipse cx="785" cy="320" rx="46" ry="40"/>
+    <ellipse cx="815" cy="310" rx="50" ry="42"/>
+    <ellipse cx="1040" cy="370" rx="58" ry="43"/>
+    <ellipse cx="1025" cy="338" rx="44" ry="37"/>
+    <ellipse cx="1055" cy="328" rx="48" ry="39"/>
+    <ellipse cx="1280" cy="345" rx="60" ry="44"/>
+    <ellipse cx="1265" cy="312" rx="45" ry="38"/>
+    <ellipse cx="1295" cy="302" rx="48" ry="40"/>
+  </g>
+
+  <!-- Ground - lava terrain -->
+  <rect y="745" width="1440" height="215" fill="url(#lava4)"/>
+
+  <!-- Lava rivers -->
+  <g opacity="0.8">
+    <!-- River 1 -->
+    <path d="M 0 780 Q 100 760 200 785 Q 300 810 400 775 Q 500 748 600 780 L 600 810 Q 500 778 400 805 Q 300 840 200 815 Q 100 790 0 810 Z" fill="#ff4400"/>
+    <!-- River 2 -->
+    <path d="M 600 790 Q 720 765 840 795 Q 960 820 1080 788 Q 1200 758 1320 792 L 1440 785 L 1440 815 L 1320 822 Q 1200 788 1080 818 Q 960 850 840 825 Q 720 795 600 820 Z" fill="#ff3300"/>
+    <!-- River 3 -->
+    <path d="M 200 820 Q 350 800 500 830 Q 650 858 800 825 Q 950 798 1100 828 Q 1250 855 1400 820 L 1440 820 L 1440 845 L 1400 850 Q 1250 885 1100 858 Q 950 828 800 855 Q 650 888 500 860 Q 350 830 200 850 L 0 840 L 0 820 Z" fill="#cc2200"/>
+  </g>
+
+  <!-- Lava glow on underside of clouds -->
+  <rect x="0" y="700" width="1440" height="50" fill="url(#lavaglow4)" opacity="0.4"/>
+
+  <!-- Falling embers/ash -->
+  <g fill="#ff6600" opacity="0.5">
+    <circle cx="80" cy="480" r="2.5"/><circle cx="160" cy="520" r="2"/><circle cx="240" cy="465" r="2.5"/>
+    <circle cx="360" cy="500" r="2"/><circle cx="480" cy="475" r="2.5"/><circle cx="580" cy="510" r="2"/>
+    <circle cx="680" cy="460" r="2.5"/><circle cx="800" cy="490" r="2"/><circle cx="920" cy="468" r="2.5"/>
+    <circle cx="1020" cy="500" r="2"/><circle cx="1120" cy="473" r="2.5"/><circle cx="1240" cy="505" r="2"/>
+    <circle cx="1340" cy="468" r="2.5"/><circle cx="1410" cy="498" r="2"/>
+    <circle cx="120" cy="560" r="2"/><circle cx="280" cy="575" r="2.5"/><circle cx="440" cy="555" r="2"/>
+    <circle cx="640" cy="570" r="2.5"/><circle cx="840" cy="558" r="2"/><circle cx="1060" cy="572" r="2.5"/>
+    <circle cx="1280" cy="560" r="2"/><circle cx="1400" cy="575" r="2.5"/>
+  </g>
+  <g fill="#ffaa00" opacity="0.35">
+    <circle cx="100" cy="385" r="2"/><circle cx="250" cy="400" r="1.5"/><circle cx="420" cy="390" r="2"/>
+    <circle cx="600" cy="378" r="1.5"/><circle cx="760" cy="395" r="2"/><circle cx="950" cy="382" r="1.5"/>
+    <circle cx="1130" cy="392" r="2"/><circle cx="1320" cy="388" r="1.5"/>
+  </g>
+
+  <!-- Dim reddish stars -->
+  <g fill="#ff8866" opacity="0.2">
+    <circle cx="60" cy="35" r="1.2"/><circle cx="180" cy="22" r="1"/><circle cx="300" cy="48" r="1.4"/>
+    <circle cx="480" cy="18" r="1"/><circle cx="660" cy="40" r="1.2"/><circle cx="840" cy="28" r="1"/>
+    <circle cx="1020" cy="52" r="1.4"/><circle cx="1200" cy="25" r="1"/><circle cx="1380" cy="42" r="1.2"/>
+  </g>
+</svg>

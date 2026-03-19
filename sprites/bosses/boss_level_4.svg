@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <!-- Magma Lord - Volcanic Demon Boss -->
+  <!-- Outer lava glow -->
+  <ellipse cx="48" cy="56" rx="36" ry="30" fill="#330500" opacity="0.6"/>
+  <!-- Wings of flame -->
+  <polygon points="48,40 6,16 16,52" fill="#880e00" opacity="0.8"/>
+  <polygon points="48,40 90,16 80,52" fill="#880e00" opacity="0.8"/>
+  <polygon points="48,38 8,14 14,34" fill="#cc2200" opacity="0.5"/>
+  <polygon points="48,38 88,14 82,34" fill="#cc2200" opacity="0.5"/>
+  <!-- Body -->
+  <ellipse cx="48" cy="60" rx="22" ry="26" fill="#220500"/>
+  <ellipse cx="48" cy="58" rx="18" ry="22" fill="#330800"/>
+  <!-- Lava cracks on body -->
+  <path d="M 40 48 Q 44 54 40 62 Q 36 68 42 74" fill="none" stroke="#ff4400" stroke-width="2.5" opacity="0.8"/>
+  <path d="M 56 50 Q 52 56 56 64 Q 60 70 54 76" fill="none" stroke="#ff4400" stroke-width="2.5" opacity="0.8"/>
+  <path d="M 44 52 Q 48 58 44 66" fill="none" stroke="#ff8800" stroke-width="1.5" opacity="0.7"/>
+  <path d="M 52 52 Q 48 58 52 66" fill="none" stroke="#ff8800" stroke-width="1.5" opacity="0.7"/>
+  <!-- Lava glow core chest -->
+  <ellipse cx="48" cy="60" rx="10" ry="10" fill="#ff4400" opacity="0.4"/>
+  <ellipse cx="48" cy="60" rx="6" ry="6" fill="#ff8800" opacity="0.5"/>
+  <!-- Head -->
+  <ellipse cx="48" cy="30" rx="18" ry="16" fill="#330800"/>
+  <ellipse cx="48" cy="28" rx="14" ry="12" fill="#440a00"/>
+  <!-- Massive horns -->
+  <polygon points="34,22 22,0 40,26" fill="#1a0400"/>
+  <polygon points="34,22 24,2 38,24" fill="#330800" opacity="0.7"/>
+  <polygon points="62,22 74,0 56,26" fill="#1a0400"/>
+  <polygon points="62,22 72,2 58,24" fill="#330800" opacity="0.7"/>
+  <!-- Smaller inner horns -->
+  <polygon points="40,18 36,8 44,20" fill="#220500"/>
+  <polygon points="56,18 60,8 52,20" fill="#220500"/>
+  <!-- Face - glowing eyes -->
+  <ellipse cx="41" cy="28" rx="6" ry="5" fill="#110200"/>
+  <ellipse cx="55" cy="28" rx="6" ry="5" fill="#110200"/>
+  <ellipse cx="41" cy="28" rx="4" ry="3.5" fill="#ff2200"/>
+  <ellipse cx="55" cy="28" rx="4" ry="3.5" fill="#ff2200"/>
+  <ellipse cx="41" cy="28" rx="2" ry="2" fill="#ffaa00"/>
+  <ellipse cx="55" cy="28" rx="2" ry="2" fill="#ffaa00"/>
+  <!-- Mouth with teeth -->
+  <path d="M 38 36 Q 48 42 58 36" fill="#110200"/>
+  <polygon points="40,36 38,42 43,36" fill="#eebbaa" opacity="0.8"/>
+  <polygon points="46,36 44,43 49,36" fill="#eebbaa" opacity="0.8"/>
+  <polygon points="52,36 50,43 55,36" fill="#eebbaa" opacity="0.8"/>
+  <polygon points="58,36 56,42 60,36" fill="#eebbaa" opacity="0.8"/>
+  <!-- Lava drip from mouth -->
+  <path d="M 46 42 Q 46 50 44 54" fill="none" stroke="#ff6600" stroke-width="2" stroke-linecap="round"/>
+  <!-- Arms with lava knuckles -->
+  <ellipse cx="22" cy="62" rx="10" ry="14" fill="#220500"/>
+  <ellipse cx="74" cy="62" rx="10" ry="14" fill="#220500"/>
+  <!-- Lava knuckle glow -->
+  <circle cx="16" cy="64" r="4" fill="#ff4400" opacity="0.6"/>
+  <circle cx="80" cy="64" r="4" fill="#ff4400" opacity="0.6"/>
+  <!-- Legs -->
+  <ellipse cx="38" cy="84" rx="10" ry="10" fill="#220500"/>
+  <ellipse cx="58" cy="84" rx="10" ry="10" fill="#220500"/>
+  <!-- Foot lava -->
+  <ellipse cx="38" cy="90" rx="12" ry="5" fill="#ff4400" opacity="0.3"/>
+  <ellipse cx="58" cy="90" rx="12" ry="5" fill="#ff4400" opacity="0.3"/>
+</svg>

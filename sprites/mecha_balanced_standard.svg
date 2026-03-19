@@ -1,201 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- DEFENDER - Balanced Standard | SRW Style | Weapon: Buster Cannon -->
-<!-- Colors: Dark Green #2E7D32/#388E3C/#66BB6A + White/light accents -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" width="64" height="80">
-  <defs>
-    <!-- Cannon barrel gradient: dark edges, lighter center -->
-    <linearGradient id="def_barrel" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#1B5E20"/>
-      <stop offset="35%"  stop-color="#2E7D32"/>
-      <stop offset="55%"  stop-color="#388E3C"/>
-      <stop offset="100%" stop-color="#1B5E20"/>
-    </linearGradient>
-    <!-- Energy glow inside barrel -->
-    <linearGradient id="def_energy" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%"   stop-color="#66BB6A" stop-opacity="0.9"/>
-      <stop offset="70%"  stop-color="#A5D6A7" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#E8F5E9"  stop-opacity="0.3"/>
-    </linearGradient>
-    <linearGradient id="def_body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#388E3C"/>
-      <stop offset="100%" stop-color="#2E7D32"/>
-    </linearGradient>
-  </defs>
+<!-- MAZINGAAR — The Iron Fist | Inspired by Mazinger Z -->
+<!-- Crimson #B71C1C · Jet Black · White · Gold #FFD700 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100" width="80" height="100">
 
-  <!-- ===== BUSTER CANNON (dominant weapon — right shoulder, barrel points upward) ===== -->
-  <!-- Cannon glow aura behind barrel -->
-  <rect x="43" y="-4"  width="22" height="30" rx="5" fill="#66BB6A" opacity="0.16"/>
-  <!-- Cannon shoulder mount / base block -->
-  <rect x="43" y="11"  width="20" height="11" rx="2" fill="#1B5E20"/>
-  <rect x="44" y="12"  width="18" height="9"  rx="1" fill="#2E7D32"/>
-  <!-- Mount bracket detail line -->
-  <rect x="44" y="17"  width="18" height="1.2" fill="#1B5E20"/>
+  <!-- FEET -->
+  <rect x="12" y="91" width="24" height="8"  rx="2" fill="#0D0D0D"/>
+  <rect x="11" y="94" width="26" height="5"  rx="1" fill="#1A1A1A"/>
+  <rect x="44" y="91" width="24" height="8"  rx="2" fill="#0D0D0D"/>
+  <rect x="43" y="94" width="26" height="5"  rx="1" fill="#1A1A1A"/>
+  <rect x="12" y="94" width="4"  height="5"  rx="0.5" fill="#252525"/>
+  <rect x="44" y="94" width="4"  height="5"  rx="0.5" fill="#252525"/>
 
-  <!-- Main barrel outer shell -->
-  <rect x="44" y="-4"  width="18" height="27" rx="2" fill="url(#def_barrel)"/>
-  <!-- Barrel inner face -->
-  <rect x="45" y="-3"  width="16" height="25" rx="1" fill="#2E7D32"/>
+  <!-- SHINS -->
+  <rect x="14" y="70" width="20" height="23" rx="1" fill="#B71C1C"/>
+  <rect x="15" y="71" width="18" height="21" rx="1" fill="#C62828"/>
+  <rect x="17" y="72" width="13" height="4"  rx="0.5" fill="#FAFAFA"/>
+  <rect x="46" y="70" width="20" height="23" rx="1" fill="#B71C1C"/>
+  <rect x="47" y="71" width="18" height="21" rx="1" fill="#C62828"/>
+  <rect x="49" y="72" width="13" height="4"  rx="0.5" fill="#FAFAFA"/>
 
-  <!-- Muzzle cap (top of barrel, points upward) -->
-  <rect x="44" y="-4"  width="18" height="5"  rx="1" fill="#1B5E20"/>
-  <rect x="45" y="-3.5" width="16" height="3.5" rx="0.8" fill="#2E7D32"/>
-  <!-- Muzzle bore (dark opening) -->
-  <rect x="47" y="-4"  width="12" height="5"  rx="1" fill="#081408"/>
-  <rect x="49" y="-3"  width="8"  height="3"  rx="0.5" fill="#0D2E10" opacity="0.8"/>
+  <!-- KNEES (angular guards) -->
+  <rect x="12" y="64" width="24" height="8"  rx="2" fill="#0D0D0D"/>
+  <rect x="13" y="65" width="22" height="6"  rx="1" fill="#1A1A1A"/>
+  <rect x="16" y="66" width="16" height="2.5" rx="0.5" fill="#EF5350"/>
+  <rect x="44" y="64" width="24" height="8"  rx="2" fill="#0D0D0D"/>
+  <rect x="45" y="65" width="22" height="6"  rx="1" fill="#1A1A1A"/>
+  <rect x="48" y="66" width="16" height="2.5" rx="0.5" fill="#EF5350"/>
 
-  <!-- Left barrel energy rail -->
-  <rect x="45" y="1"   width="3.5" height="21" rx="0.5" fill="url(#def_energy)"/>
-  <!-- Right barrel energy rail -->
-  <rect x="57.5" y="1" width="3.5" height="21" rx="0.5" fill="url(#def_energy)"/>
-  <!-- Center barrel channel (deep/dark) -->
-  <rect x="50" y="-1"  width="6"  height="25" rx="0.5" fill="#081408"/>
-  <rect x="51" y="0"   width="4"  height="22" rx="0.3" fill="#66BB6A" opacity="0.25"/>
+  <!-- THIGHS -->
+  <rect x="14" y="52" width="20" height="14" rx="1" fill="#B71C1C"/>
+  <rect x="15" y="53" width="18" height="12" rx="1" fill="#C62828"/>
+  <rect x="46" y="52" width="20" height="14" rx="1" fill="#B71C1C"/>
+  <rect x="47" y="53" width="18" height="12" rx="1" fill="#C62828"/>
 
-  <!-- Barrel reinforcement rings -->
-  <rect x="44" y="5"   width="18" height="2"  rx="0.3" fill="#1B5E20"/>
-  <rect x="45" y="5.5" width="16" height="1"  fill="#388E3C"/>
-  <rect x="44" y="12"  width="18" height="2"  rx="0.3" fill="#1B5E20"/>
-  <rect x="45" y="12.5" width="16" height="1" fill="#388E3C"/>
-  <rect x="44" y="18"  width="18" height="2"  rx="0.3" fill="#1B5E20"/>
-  <rect x="45" y="18.5" width="16" height="1" fill="#388E3C"/>
+  <!-- WAIST BELT -->
+  <polygon points="18,52 26,60 20,60" fill="#0D0D0D"/>
+  <polygon points="62,52 54,60 60,60" fill="#0D0D0D"/>
+  <rect x="24" y="50" width="32" height="5" rx="1" fill="#0D0D0D"/>
+  <rect x="26" y="51" width="28" height="3" rx="0.5" fill="#1A1A1A"/>
+  <rect x="34" y="51" width="12" height="3" rx="0.5" fill="#FFD700"/>
+  <rect x="37" y="51.5" width="6" height="2" rx="0.3" fill="#FFF9C4"/>
 
-  <!-- Green energy node indicators -->
-  <circle cx="48"  cy="3"  r="1.5" fill="#66BB6A" opacity="0.90"/>
-  <circle cx="58"  cy="3"  r="1.5" fill="#66BB6A" opacity="0.90"/>
-  <circle cx="48"  cy="9"  r="1.5" fill="#66BB6A" opacity="0.90"/>
-  <circle cx="58"  cy="9"  r="1.5" fill="#66BB6A" opacity="0.90"/>
-  <circle cx="48"  cy="15" r="1.5" fill="#66BB6A" opacity="0.90"/>
-  <circle cx="58"  cy="15" r="1.5" fill="#66BB6A" opacity="0.90"/>
+  <!-- TORSO MAIN -->
+  <polygon points="10,26 70,26 72,50 8,50" fill="#B71C1C"/>
+  <polygon points="12,27 68,27 70,49 10,49" fill="#C62828"/>
+  <!-- WHITE HERO CHEST PLATE -->
+  <polygon points="24,27 56,27 54,46 26,46" fill="#FAFAFA"/>
+  <polygon points="26,28 54,28 52,45 28,45" fill="#FFFFFF"/>
+  <!-- BREAST FIRE LEFT -->
+  <circle cx="34" cy="36" r="7.5" fill="#0D0D0D"/>
+  <circle cx="34" cy="36" r="6"   fill="#1A1A1A"/>
+  <circle cx="34" cy="36" r="4.5" fill="#B71C1C"/>
+  <circle cx="34" cy="36" r="3"   fill="#E53935"/>
+  <circle cx="34" cy="36" r="1.8" fill="#FF7043"/>
+  <circle cx="34" cy="36" r="0.9" fill="#FFAB91"/>
+  <!-- BREAST FIRE RIGHT -->
+  <circle cx="46" cy="36" r="7.5" fill="#0D0D0D"/>
+  <circle cx="46" cy="36" r="6"   fill="#1A1A1A"/>
+  <circle cx="46" cy="36" r="4.5" fill="#B71C1C"/>
+  <circle cx="46" cy="36" r="3"   fill="#E53935"/>
+  <circle cx="46" cy="36" r="1.8" fill="#FF7043"/>
+  <circle cx="46" cy="36" r="0.9" fill="#FFAB91"/>
+  <!-- Side vents -->
+  <rect x="10" y="31" width="4" height="14" rx="0.5" fill="#0D0D0D"/>
+  <rect x="11" y="32" width="2" height="3" fill="#EF5350"/>
+  <rect x="11" y="37" width="2" height="3" fill="#EF5350"/>
+  <rect x="11" y="42" width="2" height="3" fill="#EF5350"/>
+  <rect x="66" y="31" width="4" height="14" rx="0.5" fill="#0D0D0D"/>
+  <rect x="67" y="32" width="2" height="3" fill="#EF5350"/>
+  <rect x="67" y="37" width="2" height="3" fill="#EF5350"/>
+  <rect x="67" y="42" width="2" height="3" fill="#EF5350"/>
 
-  <!-- ===== TORSO ===== -->
-  <!-- Main body -->
-  <polygon points="17,14  46,14  48,38  15,38" fill="url(#def_body)"/>
-  <!-- Torso armor layer -->
-  <polygon points="18,15  45,15  47,37  16,37" fill="#388E3C"/>
-  <!-- White/light chest plate (classic Gundam style) -->
-  <polygon points="22,15  43,15  41,27  24,27" fill="#E8F5E9"/>
-  <polygon points="23,16  42,16  40,26  25,26" fill="#F1F8E9"/>
-  <!-- Center vertical stripe on chest plate -->
-  <polygon points="30,15  34,15  33,27  31,27" fill="#2E7D32"/>
-  <!-- Chest shoulder scoop panels -->
-  <polygon points="22,15  29,15  28,23  22,23" fill="#C8E6C9" opacity="0.6"/>
-  <polygon points="43,15  36,15  37,23  43,23" fill="#C8E6C9" opacity="0.6"/>
-  <!-- Left side vent -->
-  <rect x="15" y="21"  width="5"  height="9"  rx="0.5" fill="#1B5E20"/>
-  <rect x="16" y="22"  width="3"  height="7"  rx="0.3" fill="#0A1F0B"/>
-  <!-- Lower chest panel -->
-  <rect x="21" y="28"  width="22" height="4"  rx="0.5" fill="#2E7D32"/>
-  <rect x="23" y="29"  width="8"  height="2"  rx="0.3" fill="#1B5E20"/>
-  <rect x="33" y="29"  width="8"  height="2"  rx="0.3" fill="#1B5E20"/>
-  <!-- Waist armor belt -->
-  <rect x="18" y="33"  width="27" height="6"  rx="1"   fill="#1B5E20"/>
-  <rect x="19" y="34"  width="12" height="4"  rx="0.5" fill="#2E7D32"/>
-  <rect x="33" y="34"  width="12" height="4"  rx="0.5" fill="#2E7D32"/>
-  <!-- Green highlight stripe on waist -->
-  <rect x="18" y="35.5" width="27" height="1.5" fill="#66BB6A" opacity="0.50"/>
+  <!-- SHOULDERS (wide black pauldrons + red spikes) -->
+  <polygon points="2,18 12,22 10,40 0,36"  fill="#0D0D0D"/>
+  <polygon points="3,19 11,23 9,38  1,35"  fill="#1A1A1A"/>
+  <polygon points="-3,24 6,19 6,29"        fill="#B71C1C"/>
+  <rect x="2" y="29" width="10" height="1.5" fill="#B71C1C"/>
+  <polygon points="78,18 68,22 70,40 80,36" fill="#0D0D0D"/>
+  <polygon points="77,19 69,23 71,38 79,35" fill="#1A1A1A"/>
+  <polygon points="83,24 74,19 74,29"        fill="#B71C1C"/>
+  <rect x="68" y="29" width="10" height="1.5" fill="#B71C1C"/>
 
-  <!-- ===== HEAD ===== -->
-  <!-- Center head fin (tall single fin, classic Gundam) -->
-  <rect x="30" y="-1"  width="4"  height="8"  rx="0.5" fill="#1B5E20"/>
-  <!-- Fin highlight stripe -->
-  <rect x="31" y="0"   width="2"  height="6"  rx="0.3" fill="#66BB6A" opacity="0.55"/>
-  <!-- Fin base connector block -->
-  <rect x="28" y="5"   width="8"  height="2"  rx="0.5" fill="#2E7D32"/>
-  <!-- Head main box (classic rectangular) -->
-  <rect x="21" y="5"   width="22" height="10" rx="1"   fill="#2E7D32"/>
-  <rect x="22" y="6"   width="20" height="8"  rx="0.5" fill="#388E3C"/>
-  <!-- Top ridge plate -->
-  <rect x="22" y="5"   width="20" height="2.5" rx="0.5" fill="#1B5E20"/>
-  <!-- Dual visor band (white/light — classic two-lens style) -->
-  <rect x="23" y="9.5" width="18" height="3"  rx="0.5" fill="#E8F5E9"/>
-  <!-- Left visor lens -->
-  <rect x="24" y="10"  width="7"  height="2"  rx="0.3" fill="#A5D6A7"/>
-  <rect x="24.5" y="10.3" width="6" height="1.4" rx="0.2" fill="white" opacity="0.85"/>
-  <!-- Right visor lens -->
-  <rect x="33" y="10"  width="7"  height="2"  rx="0.3" fill="#A5D6A7"/>
-  <rect x="33.5" y="10.3" width="6" height="1.4" rx="0.2" fill="white" opacity="0.85"/>
-  <!-- Nose bridge / visor center divider -->
-  <rect x="31" y="9.5" width="2"  height="3"  fill="#1B5E20"/>
-  <!-- Chin plate -->
-  <rect x="23" y="13"  width="18" height="2"  rx="0.5" fill="#2E7D32"/>
-  <!-- Head side panels -->
-  <rect x="21" y="7"   width="2"  height="6"  rx="0.5" fill="#2E7D32"/>
-  <rect x="41" y="7"   width="2"  height="6"  rx="0.5" fill="#2E7D32"/>
-  <!-- Antenna stubs on head sides -->
-  <rect x="20" y="8"   width="2"  height="1.5" rx="0.3" fill="#66BB6A" opacity="0.85"/>
-  <rect x="42" y="8"   width="2"  height="1.5" rx="0.3" fill="#66BB6A" opacity="0.85"/>
+  <!-- LEFT ARM -->
+  <rect x="2"  y="34" width="12" height="14" rx="1" fill="#B71C1C"/>
+  <rect x="3"  y="35" width="10" height="12" rx="1" fill="#C62828"/>
+  <rect x="1"  y="48" width="14" height="5"  rx="1.5" fill="#0D0D0D"/>
+  <rect x="1"  y="53" width="14" height="14" rx="1" fill="#B71C1C"/>
+  <rect x="2"  y="54" width="12" height="12" rx="1" fill="#C62828"/>
+  <rect x="3"  y="55" width="8"  height="2.5" fill="#FAFAFA"/>
+  <rect x="1"  y="67" width="14" height="10" rx="2" fill="#0D0D0D"/>
+  <rect x="2"  y="68" width="12" height="8"  rx="1" fill="#1A1A1A"/>
+  <rect x="3"  y="70" width="9"  height="1.5" fill="#333"/>
+  <rect x="3"  y="73" width="9"  height="1.5" fill="#333"/>
 
-  <!-- ===== LEFT ARM (standard/shield arm) ===== -->
-  <!-- Shoulder pauldron (stocky, rounded) -->
-  <rect x="9"  y="14"  width="11" height="10" rx="2"   fill="#2E7D32"/>
-  <rect x="10" y="15"  width="9"  height="8"  rx="1"   fill="#388E3C"/>
-  <!-- White shoulder highlight -->
-  <rect x="11" y="15"  width="6"  height="3"  rx="0.5" fill="#E8F5E9" opacity="0.55"/>
-  <!-- Upper arm -->
-  <rect x="10" y="24"  width="9"  height="10" rx="1"   fill="#2E7D32"/>
-  <rect x="11" y="25"  width="7"  height="8"  rx="0.5" fill="#388E3C"/>
-  <!-- Elbow guard -->
-  <rect x="9.5" y="34" width="10" height="3"  rx="1"   fill="#1B5E20"/>
-  <!-- Forearm (defensive / blocky) -->
-  <rect x="9"  y="37"  width="11" height="8"  rx="1"   fill="#2E7D32"/>
-  <rect x="10" y="38"  width="9"  height="6"  rx="0.5" fill="#388E3C"/>
-  <!-- White forearm accent band -->
-  <rect x="10" y="38"  width="6"  height="2"  rx="0.3" fill="#E8F5E9" opacity="0.50"/>
-  <!-- Hand -->
-  <rect x="9"  y="45"  width="11" height="4"  rx="1"   fill="#1B5E20"/>
+  <!-- RIGHT ARM (Rocket Punch — bigger fist) -->
+  <rect x="66" y="34" width="12" height="14" rx="1" fill="#B71C1C"/>
+  <rect x="67" y="35" width="10" height="12" rx="1" fill="#C62828"/>
+  <rect x="65" y="48" width="14" height="5"  rx="1.5" fill="#0D0D0D"/>
+  <rect x="65" y="53" width="15" height="14" rx="1" fill="#B71C1C"/>
+  <rect x="66" y="54" width="13" height="12" rx="1" fill="#C62828"/>
+  <!-- Rocket launch ring -->
+  <rect x="65" y="56" width="15" height="3"  rx="0.5" fill="#0D0D0D"/>
+  <rect x="66" y="56.5" width="13" height="2" fill="#FF9800"/>
+  <!-- MASSIVE FIST -->
+  <rect x="65" y="67" width="16" height="11" rx="2" fill="#0D0D0D"/>
+  <rect x="66" y="68" width="14" height="9"  rx="1" fill="#1A1A1A"/>
+  <rect x="67" y="69" width="11" height="1.5" fill="#2A2A2A"/>
+  <rect x="67" y="72" width="11" height="1.5" fill="#2A2A2A"/>
+  <rect x="67" y="75" width="11" height="1.5" fill="#2A2A2A"/>
 
-  <!-- ===== RIGHT ARM (cannon arm — upper arm beneath cannon barrel) ===== -->
-  <!-- Upper arm (partially beneath cannon) -->
-  <rect x="46" y="22"  width="7"  height="10" rx="1"   fill="#2E7D32"/>
-  <rect x="47" y="23"  width="5"  height="8"  rx="0.5" fill="#388E3C"/>
-  <!-- Elbow -->
-  <rect x="45.5" y="32" width="8" height="3"  rx="1"   fill="#1B5E20"/>
-  <!-- Forearm / cannon grip bracing -->
-  <rect x="46" y="35"  width="7"  height="9"  rx="1"   fill="#2E7D32"/>
-  <rect x="47" y="36"  width="5"  height="7"  rx="0.5" fill="#388E3C"/>
-  <!-- Grip-to-cannon connector bracket -->
-  <rect x="45" y="39"  width="9"  height="2.5" rx="0.5" fill="#1B5E20"/>
-  <!-- Hand -->
-  <rect x="46" y="43"  width="7"  height="4"  rx="1"   fill="#1B5E20"/>
+  <!-- NECK -->
+  <rect x="32" y="22" width="16" height="5" rx="1" fill="#0D0D0D"/>
+  <rect x="33" y="23" width="14" height="3" rx="0.5" fill="#212121"/>
 
-  <!-- ===== LEGS ===== -->
-  <!-- Hip joints -->
-  <rect x="18" y="37"  width="13" height="9"  rx="1" fill="#1B5E20"/>
-  <rect x="33" y="37"  width="13" height="9"  rx="1" fill="#1B5E20"/>
-
-  <!-- Left leg (stocky proportions) -->
-  <!-- Thigh -->
-  <rect x="18" y="46"  width="13" height="13" rx="1"   fill="#2E7D32"/>
-  <rect x="19" y="47"  width="11" height="11" rx="0.5" fill="#388E3C"/>
-  <!-- White thigh highlight -->
-  <rect x="20" y="47"  width="7"  height="3"  rx="0.3" fill="#E8F5E9" opacity="0.50"/>
-  <!-- Knee guard -->
-  <rect x="17" y="59"  width="15" height="5"  rx="1"   fill="#1B5E20"/>
-  <rect x="18" y="60"  width="13" height="3"  rx="0.5" fill="#2E7D32"/>
-  <!-- Shin -->
-  <rect x="18" y="64"  width="13" height="11" rx="1"   fill="#2E7D32"/>
-  <rect x="19" y="65"  width="11" height="9"  rx="0.5" fill="#388E3C"/>
-  <!-- White shin stripe -->
-  <rect x="20" y="65"  width="7"  height="2"  rx="0.3" fill="#E8F5E9" opacity="0.50"/>
-  <!-- Foot -->
-  <rect x="17" y="75"  width="15" height="4"  rx="1"   fill="#1B5E20"/>
-  <rect x="16" y="77"  width="17" height="3"  rx="1"   fill="#2E7D32"/>
-
-  <!-- Right leg (stocky proportions) -->
-  <!-- Thigh -->
-  <rect x="33" y="46"  width="13" height="13" rx="1"   fill="#2E7D32"/>
-  <rect x="34" y="47"  width="11" height="11" rx="0.5" fill="#388E3C"/>
-  <!-- White thigh highlight -->
-  <rect x="38" y="47"  width="7"  height="3"  rx="0.3" fill="#E8F5E9" opacity="0.50"/>
-  <!-- Knee guard -->
-  <rect x="32" y="59"  width="15" height="5"  rx="1"   fill="#1B5E20"/>
-  <rect x="33" y="60"  width="13" height="3"  rx="0.5" fill="#2E7D32"/>
-  <!-- Shin -->
-  <rect x="33" y="64"  width="13" height="11" rx="1"   fill="#2E7D32"/>
-  <rect x="34" y="65"  width="11" height="9"  rx="0.5" fill="#388E3C"/>
-  <!-- White shin stripe -->
-  <rect x="38" y="65"  width="7"  height="2"  rx="0.3" fill="#E8F5E9" opacity="0.50"/>
-  <!-- Foot -->
-  <rect x="31" y="75"  width="15" height="4"  rx="1"   fill="#1B5E20"/>
-  <rect x="30" y="77"  width="17" height="3"  rx="1"   fill="#2E7D32"/>
+  <!-- HEAD (iconic square Mazinger head) -->
+  <rect x="20" y="6"  width="40" height="17" rx="2" fill="#0D0D0D"/>
+  <rect x="21" y="7"  width="38" height="15" rx="1" fill="#1A1A1A"/>
+  <!-- Red ear vents with grille -->
+  <rect x="16" y="9"  width="6"  height="11" rx="0.5" fill="#B71C1C"/>
+  <rect x="17" y="10.5" width="3" height="1.2" fill="#0D0D0D"/>
+  <rect x="17" y="13"   width="3" height="1.2" fill="#0D0D0D"/>
+  <rect x="17" y="15.5" width="3" height="1.2" fill="#0D0D0D"/>
+  <rect x="58" y="9"  width="6"  height="11" rx="0.5" fill="#B71C1C"/>
+  <rect x="59" y="10.5" width="3" height="1.2" fill="#0D0D0D"/>
+  <rect x="59" y="13"   width="3" height="1.2" fill="#0D0D0D"/>
+  <rect x="59" y="15.5" width="3" height="1.2" fill="#0D0D0D"/>
+  <!-- Forehead plate -->
+  <rect x="22" y="7"  width="36" height="5"  rx="0.5" fill="#252525"/>
+  <!-- W-VISOR (gold — the most iconic Mazinger feature) -->
+  <polygon points="21,13 27,11 32,16 40,11 48,16 53,11 59,13 59,19 21,19" fill="#FFD700"/>
+  <polygon points="22,14 27,12 32,17 40,12 48,17 53,12 58,14 58,18 22,18" fill="#FFF176"/>
+  <polyline points="21,13 27,11 32,16 40,11 48,16 53,11 59,13" fill="none" stroke="#E65100" stroke-width="0.8"/>
+  <rect x="22" y="16" width="36" height="2" rx="0.5" fill="#FF8F00" opacity="0.35"/>
+  <!-- Chin guard -->
+  <rect x="23" y="20" width="34" height="4"  rx="0.5" fill="#212121"/>
+  <rect x="25" y="21" width="7"  height="2"  rx="0.3" fill="#2A2A2A"/>
+  <rect x="34" y="21" width="12" height="2"  rx="0.3" fill="#2A2A2A"/>
+  <rect x="48" y="21" width="7"  height="2"  rx="0.3" fill="#2A2A2A"/>
+  <!-- V-FIN left red -->
+  <polygon points="24,6 18,0 31,3"  fill="#B71C1C"/>
+  <polygon points="25,6 20,1 31,4"  fill="#C62828"/>
+  <!-- V-FIN right red -->
+  <polygon points="56,6 62,0 49,3"  fill="#B71C1C"/>
+  <polygon points="55,6 60,1 49,4"  fill="#C62828"/>
+  <!-- CENTER GOLD CREST (tall spike) -->
+  <polygon points="36,6 44,6 42,1 40,-3 38,1" fill="#FFD700"/>
+  <polygon points="37,6 43,6 41,2  40,-1 39,2" fill="#FFF176"/>
+  <circle cx="40" cy="-2" r="1.8" fill="#FFD700"/>
+  <circle cx="40" cy="-2" r="1"   fill="#FFFDE7"/>
 </svg>

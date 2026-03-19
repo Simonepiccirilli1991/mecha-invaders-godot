@@ -12,26 +12,26 @@ const MAX_LEVELS: int = 10
 
 # Level configurations - difficulty increases each level
 var level_configs = [
-	# Level 1 - Easy: UFO Saucer
-	{ "rows": 4, "columns": 10, "speed": 50, "descent": 20, "shoot_interval": 2.5, "sprite": "res://sprites/enemy_ship_level_1.svg" },
-	# Level 2: Basic Fighter
-	{ "rows": 4, "columns": 10, "speed": 58, "descent": 22, "shoot_interval": 2.3, "sprite": "res://sprites/enemy_ship_level_2.svg" },
-	# Level 3: Tri-Fighter
-	{ "rows": 5, "columns": 10, "speed": 66, "descent": 24, "shoot_interval": 2.1, "sprite": "res://sprites/enemy_ship_level_3.svg" },
-	# Level 4: Crab Drone
-	{ "rows": 5, "columns": 11, "speed": 76, "descent": 26, "shoot_interval": 1.9, "sprite": "res://sprites/enemy_ship_level_4.svg" },
-	# Level 5: Bat Wing
-	{ "rows": 6, "columns": 11, "speed": 87, "descent": 28, "shoot_interval": 1.7, "sprite": "res://sprites/enemy_ship_level_5.svg" },
-	# Level 6: Horned Demon Ship
-	{ "rows": 6, "columns": 12, "speed": 100, "descent": 30, "shoot_interval": 1.5, "sprite": "res://sprites/enemy_ship_level_6.svg" },
-	# Level 7: Heavy Cruiser
-	{ "rows": 7, "columns": 12, "speed": 115, "descent": 32, "shoot_interval": 1.3, "sprite": "res://sprites/enemy_ship_level_7.svg" },
-	# Level 8: Skull Fighter
-	{ "rows": 7, "columns": 12, "speed": 132, "descent": 34, "shoot_interval": 1.2, "sprite": "res://sprites/enemy_ship_level_8.svg" },
-	# Level 9: Multi-Prong Warship
-	{ "rows": 8, "columns": 12, "speed": 152, "descent": 36, "shoot_interval": 1.0, "sprite": "res://sprites/enemy_ship_level_9.svg" },
-	# Level 10 - Hard: Dreadnought Boss
-	{ "rows": 8, "columns": 12, "speed": 175, "descent": 38, "shoot_interval": 0.9, "sprite": "res://sprites/enemy_ship_level_10.svg" }
+	# Level 1 - The Burning City
+	{ "rows": 4, "columns": 10, "speed": 50, "descent": 20, "shoot_interval": 2.5, "sprite": "res://sprites/enemy_ship_level_1.svg", "background": "res://sprites/backgrounds/bg_level_1.svg" },
+	# Level 2 - Nuclear Fallout
+	{ "rows": 4, "columns": 10, "speed": 58, "descent": 22, "shoot_interval": 2.3, "sprite": "res://sprites/enemy_ship_level_2.svg", "background": "res://sprites/backgrounds/bg_level_2.svg" },
+	# Level 3 - The Great Flood
+	{ "rows": 5, "columns": 10, "speed": 66, "descent": 24, "shoot_interval": 2.1, "sprite": "res://sprites/enemy_ship_level_3.svg", "background": "res://sprites/backgrounds/bg_level_3.svg" },
+	# Level 4 - Volcanic Hellscape
+	{ "rows": 5, "columns": 11, "speed": 76, "descent": 26, "shoot_interval": 1.9, "sprite": "res://sprites/enemy_ship_level_4.svg", "background": "res://sprites/backgrounds/bg_level_4.svg" },
+	# Level 5 - Frozen Abyss
+	{ "rows": 6, "columns": 11, "speed": 87, "descent": 28, "shoot_interval": 1.7, "sprite": "res://sprites/enemy_ship_level_5.svg", "background": "res://sprites/backgrounds/bg_level_5.svg" },
+	# Level 6 - Toxic Plague
+	{ "rows": 6, "columns": 12, "speed": 100, "descent": 30, "shoot_interval": 1.5, "sprite": "res://sprites/enemy_ship_level_6.svg", "background": "res://sprites/backgrounds/bg_level_6.svg" },
+	# Level 7 - Desert of Bones
+	{ "rows": 7, "columns": 12, "speed": 115, "descent": 32, "shoot_interval": 1.3, "sprite": "res://sprites/enemy_ship_level_7.svg", "background": "res://sprites/backgrounds/bg_level_7.svg" },
+	# Level 8 - The Void Opens
+	{ "rows": 7, "columns": 12, "speed": 132, "descent": 34, "shoot_interval": 1.2, "sprite": "res://sprites/enemy_ship_level_8.svg", "background": "res://sprites/backgrounds/bg_level_8.svg" },
+	# Level 9 - Machine Apocalypse
+	{ "rows": 8, "columns": 12, "speed": 152, "descent": 36, "shoot_interval": 1.0, "sprite": "res://sprites/enemy_ship_level_9.svg", "background": "res://sprites/backgrounds/bg_level_9.svg" },
+	# Level 10 - Final Armageddon
+	{ "rows": 8, "columns": 12, "speed": 175, "descent": 38, "shoot_interval": 0.9, "sprite": "res://sprites/enemy_ship_level_10.svg", "background": "res://sprites/backgrounds/bg_level_10.svg" }
 ]
 
 # Signals for UI updates

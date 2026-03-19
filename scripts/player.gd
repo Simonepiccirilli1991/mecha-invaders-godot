@@ -66,6 +66,7 @@ func _build_anim_params() -> Dictionary:
 			return { "hover_amp": 3.0, "hover_speed": 2.5, "tilt_max": 10.0, "tilt_speed": 8.0,  "recoil": 8.0 }
 
 func _ready() -> void:
+	add_to_group("player")
 	apply_mecha_stats()
 	screen_size = get_viewport_rect().size
 	area_entered.connect(_on_area_entered)

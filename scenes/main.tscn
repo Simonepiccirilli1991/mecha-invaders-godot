@@ -14,12 +14,17 @@
 script = ExtResource("1_main")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1080.0
-offset_bottom = 720.0
+offset_right = 1440.0
+offset_bottom = 960.0
 color = Color(0, 0, 0.2, 1)
 
+[node name="LevelBackground" type="TextureRect" parent="."]
+offset_right = 1440.0
+offset_bottom = 960.0
+stretch_mode = 0
+
 [node name="Player" parent="." instance=ExtResource("2_player")]
-position = Vector2(720, 880)
+position = Vector2(720, 920)
 
 [node name="EnemySpawner" type="Node2D" parent="."]
 script = ExtResource("3_spawner")

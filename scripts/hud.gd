@@ -11,12 +11,16 @@ extends CanvasLayer
 @onready var game_over_panel = $GameOverPanel
 @onready var message_label = $GameOverPanel/VBoxContainer/MessageLabel
 @onready var final_score_label = $GameOverPanel/VBoxContainer/ScoreLabel
+@onready var boss_health_container = $BossHealthContainer
+@onready var boss_name_label = $BossHealthContainer/BossNameLabel
+@onready var boss_health_bar = $BossHealthContainer/BossHealthBar
 
 var _special_name: String = "SPECIAL"
 var _ultimate_name: String = "ULTIMATE"
 
 func _ready() -> void:
 	game_over_panel.visible = false
+	boss_health_container.visible = false
 
 func update_score(score: int) -> void:
 	score_label.text = "Score: " + str(score)
@@ -53,7 +57,25 @@ func update_ultimate(remaining: float, max_val: float, is_ready: bool) -> void:
 		ultimate_label.text = "%s: %.1fs [Z]" % [_ultimate_name, remaining]
 		ultimate_label.add_theme_color_override("font_color", Color(0.6, 0.6, 0.6))
 
+func show_boss_health(name: String, max_hp: int) -> void:
+	boss_name_label.text = "⚠ " + name + " ⚠"
+	boss_health_bar.max_value = max_hp
+	boss_health_bar.value = max_hp
+	boss_health_container.visible = true
+
+func update_boss_health(current: int, maximum: int) -> void:
+	boss_health_bar.max_value = maximum
+	boss_health_bar.value = current
+	# Color shifts red as HP drops
+	var ratio := float(current) / float(maximum) if maximum > 0 else 0.0
+	var bar_color := Color(1.0 - ratio * 0.5, ratio * 0.8, 0.0)
+	boss_health_bar.add_theme_color_override("font_color", bar_color)
+
+func hide_boss_health() -> void:
+	boss_health_container.visible = false
+
 func show_game_over(won: bool, final_score: int) -> void:
+	boss_health_container.visible = false
 	game_over_panel.visible = true
 
 	if won:

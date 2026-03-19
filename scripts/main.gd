@@ -8,10 +8,14 @@ extends Node2D
 @onready var game_manager = $GameManager
 @onready var start_screen = $StartScreen
 @onready var level_transition = $LevelTransition
+@onready var level_background = $LevelBackground
 
 var is_transitioning: bool = false
 var mecha_selection_screen_scene = preload("res://scenes/ui/mecha_selection_screen.tscn")
 var mecha_selection_screen: CanvasLayer = null
+var boss_scene = preload("res://scenes/boss.tscn")
+var current_boss: Node = null
+var boss_active: bool = false
 
 func _ready() -> void:
 	# Connect player signals
@@ -81,10 +85,18 @@ func _on_game_started() -> void:
 func start_level(level_num: int) -> void:
 	# Clear any remaining bullets
 	clear_bullets()
-	
+
 	# Reset player position
-	player.position = Vector2(540, 650)
-	
+	player.position = Vector2(720, 920)
+
+	# Load and apply the level background
+	var config = game_manager.level_configs[level_num - 1]
+	var bg_path = config.get("background", "")
+	if bg_path != "":
+		var tex = load(bg_path)
+		if tex:
+			level_background.texture = tex
+
 	# Show level transition
 	is_transitioning = true
 	level_transition.show_level(level_num)
@@ -118,10 +130,33 @@ func _on_enemy_destroyed(points: int) -> void:
 func _on_all_enemies_destroyed() -> void:
 	print("Main: All enemies destroyed signal received!")
 	if not is_transitioning:
-		print("Main: Calling complete_level()")
-		game_manager.complete_level()
+		print("Main: Spawning boss for level ", game_manager.current_level)
+		_spawn_boss()
 	else:
 		print("Main: Is transitioning, ignoring...")
+
+func _spawn_boss() -> void:
+	var boss = boss_scene.instantiate()
+	boss.position = Vector2(get_viewport_rect().size.x / 2.0, 130.0)
+	# add_child FIRST so _ready() runs: viewport_size is set and area_entered is connected
+	add_child(boss)
+	boss.boss_destroyed.connect(_on_boss_destroyed)
+	boss.boss_health_changed.connect(_on_boss_health_changed)
+	boss.setup(game_manager.current_level, enemy_spawner.enemy_bullet_scene)
+	current_boss = boss
+	boss_active = true
+	hud.show_boss_health(boss.boss_name, boss.max_health)
+
+func _on_boss_health_changed(current: int, maximum: int) -> void:
+	hud.update_boss_health(current, maximum)
+
+func _on_boss_destroyed(points: int) -> void:
+	boss_active = false
+	current_boss = null
+	hud.hide_boss_health()
+	game_manager.add_score(points)
+	if not is_transitioning:
+		game_manager.complete_level()
 
 func _on_level_complete() -> void:
 	print("Main: Level complete signal received! Starting level ", game_manager.current_level)
